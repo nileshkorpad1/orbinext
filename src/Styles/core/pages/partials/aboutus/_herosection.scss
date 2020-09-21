@@ -1,0 +1,44 @@
+.company {
+	.aboutus {
+		&.hero-section {
+			min-height: 100vh;
+			background-color: $white;
+			&:before {
+				background-color: theme-color('light');
+			}
+			.primary-panel {
+				.section-heading,
+				.hero-heading {
+					display: block;
+					width: auto;
+					font-weight: 900;
+					line-height: 1;
+					color: theme-color('secondary');
+				}
+				.thought {
+					font-size: 2rem;
+					.sentence {
+						font-weight: 500;
+					}
+				}
+			}
+			.secondary-panel {
+				.card-columns {
+					column-count: 6;
+
+					@include media-breakpoint-down(md) {
+						column-count: 5;
+					}
+					.card {
+						border: none;
+						background-color: transparent;
+						margin-bottom: 1.75rem;
+						.profile-img {
+							max-width: 100%;
+						}
+					}
+				}
+			}
+		}
+	}
+}

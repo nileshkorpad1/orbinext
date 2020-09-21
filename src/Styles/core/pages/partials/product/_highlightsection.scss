@@ -1,0 +1,143 @@
+.product-page {
+	&.books-page {
+		section {
+			&.highlight-section {
+				.secondary-panel {
+					&.parallax-banner {
+						margin-top: 1rem;
+						.parallax-outer {
+							&.parallax-takeout {
+								// max-width: 20rem;
+								// top: 50%;
+								// left: 30%;
+								&.takeout-one {
+									top: 50%;
+									left: 30%;
+									img.takeout-one {
+										max-width: 22rem;
+									}
+								}
+								&.takeout-two {
+									top: -25%;
+									right: 0%;
+									img.takeout-two {
+										width: auto;
+										height: auto;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	&.sales-page {
+		section {
+			&.highlight-section {
+				.secondary-panel {
+					&.parallax-banner {
+						.parallax-takeout {
+							&.takeout-one {
+								top: 70%;
+								left: 50%;
+								img.takeout-one {
+									max-width: 15rem;
+								}
+							}
+							&.takeout-two {
+								top: -10%;
+								left: 20%;
+								img.takeout-two {
+									width: auto;
+									height: auto;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	&.people-page {
+		section {
+			&.highlight-section {
+				.secondary-panel {
+					&.parallax-banner {
+						.parallax-annotation {
+							top: 20%;
+							left: 70%;
+							.img-annotation {
+								position: relative;
+							}
+						}
+						.parallax-takeout {
+							&.takeout-one {
+								top: 70%;
+								left: 20%;
+								img.takeout-one {
+									max-width: 100%;
+								}
+							}
+							&.takeout-two {
+								top: -25%;
+								left: 10%;
+								img.takeout-two {
+									width: auto;
+									height: auto;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	section {
+		///Product Common Classes
+		&.hero-section {
+			.primary-panel {
+				.section-heading,
+				.hero-heading {
+					display: block;
+					width: auto;
+					font-weight: 900;
+					line-height: 1;
+					color: theme-color('secondary');
+				}
+				.thought {
+					font-size: 2rem;
+					.sentence {
+						font-weight: 500;
+					}
+				}
+			}
+			.secondary-panel {
+				.card-columns {
+					column-count: 6;
+
+					@include media-breakpoint-down(md) {
+						column-count: 5;
+					}
+					.card {
+						border: none;
+						background-color: transparent;
+						margin-bottom: 1.75rem;
+						.profile-img {
+							width: 5vw;
+						}
+					}
+				}
+			}
+		}
+		//Product common classes
+		&.highlight-section {
+			overflow: hidden;
+			padding-top: 10rem;
+			padding-bottom: 0;
+			.btn-readmore {
+				color: $white;
+			}
+		}
+	}
+}

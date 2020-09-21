@@ -1,0 +1,53 @@
+.company {
+	.career {
+		&.job-section {
+			background-color: theme-color('light');
+			&:before {
+				background-color: theme-color('light');
+			}
+			.primary-panel {
+				.section-heading {
+					display: -ms-grid;
+					font-weight: 900;
+					line-height: 1;
+				}
+			}
+			.secondary-panel {
+				.main-screenshot {
+					width: 35rem;
+				}
+			}
+			.full-section {
+				.btn-apply {
+					background: #f47521;
+					border: none;
+					padding: 0.5rem 2rem;
+					font-weight: 700;
+				}
+				.table {
+					thead {
+						th {
+							border: none;
+							font-weight: 400;
+						}
+					}
+					tbody {
+						td {
+							font-weight: 700;
+							vertical-align: middle;
+							padding: 1.6rem 0;
+						}
+					}
+				}
+			}
+			.background-decorator {
+				position: absolute;
+				&.top-right {
+					top: 0vw;
+					right: 0vw;
+					max-width: 15rem;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,194 @@
+.product-page {
+	&.books-page {
+		section {
+			&.hero-section {
+				.primary-panel {
+					.section-heading,
+					.hero-heading {
+						line-height: 1;
+						@include media-breakpoint-down(sm) {
+							font-size: ($small_ratio * 5) * 1rem;
+							@include fluid-type($min_width, $max_width, ($small_ratio * 4) * $min_font, ($large_ratio * 2.45) * $max_font);
+						}
+					}
+				}
+				.secondary-panel {
+					.parallax-outer {
+						&.main-screenshot-one {
+							top: 1%;
+							left: 45%;
+							position: absolute;
+						}
+						&.main-screenshot-two {
+							max-width: 75%;
+							z-index: 999;
+							left: 10%;
+							position: absolute;
+							top: 20%;
+						}
+						&.main-screenshot-three {
+							top: 60%;
+							left: 45%;
+							position: absolute;
+							z-index: 999;
+						}
+
+						@include media-breakpoint-down(md) {
+							// special between sm and md :::::: for large headings only
+							&.main-screenshot-two {
+								margin: auto;
+								width: 100%;
+								position: relative;
+								top: 0;
+								left: 0;
+							}
+							&.main-screenshot-one,
+							&.main-screenshot-three {
+								display: none;
+							}
+						}
+
+						&.parallax-annotation {
+							top: -5%;
+							right: auto;
+							text-align: right;
+							left: 65%;
+						}
+					}
+				}
+			}
+		}
+	}
+	&.sales-page {
+		section {
+			&.hero-section {
+				.secondary-panel {
+					.parallax-outer {
+						&.main-screenshot-one {
+							top: -2%;
+							left: 55%;
+							position: absolute;
+							z-index: 99;
+						}
+						&.main-screenshot-two {
+							max-width: 25rem;
+							position: absolute;
+							left: 5%;
+							top: -10%;
+						}
+						&.main-screenshot-three {
+							top: 50%;
+							left: 45%;
+							position: absolute;
+							z-index: 99;
+						}
+						&.main-screenshot-four {
+							max-width: 18rem;
+							left: 15%;
+							top: 75%;
+							position: absolute;
+							z-index: 999;
+						}
+						@include media-breakpoint-down(md) {
+							&.main-screenshot-two {
+								margin: auto;
+								width: 100%;
+								position: relative;
+								top: 0;
+							}
+							&.main-screenshot-one,
+							&.main-screenshot-three,
+							&.main-screenshot-four {
+								display: none;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	&.people-page {
+		section {
+			&.hero-section {
+				.secondary-panel {
+					.parallax-outer {
+						&.main-screenshot-one {
+							top: 2%;
+							left: 53%;
+							position: absolute;
+							z-index: 999999;
+						}
+						&.main-screenshot-two {
+							max-width: 25rem;
+							position: absolute;
+							left: 5%;
+							top: 1%;
+						}
+						&.main-screenshot-three {
+							max-width: 25rem;
+							top: 60%;
+							left: 30%;
+							position: absolute;
+							z-index: 9999;
+						}
+						&.main-screenshot-four {
+							width: 25rem;
+							left: 5%;
+							top: 87%;
+							position: absolute;
+							z-index: 999;
+						}
+						@include media-breakpoint-down(md) {
+							&.main-screenshot-two {
+								margin: auto;
+								width: 100%;
+								position: relative;
+								top: 0;
+							}
+							&.main-screenshot-one,
+							&.main-screenshot-three,
+							&.main-screenshot-four {
+								display: none;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	// Common Classes
+	.section {
+		&.hero-section {
+			.primary-panel {
+				.section-heading,
+				.hero-heading {
+					display: block;
+					width: auto;
+					color: theme-color('secondary');
+					span {
+						color: $deep-red;
+					}
+				}
+				.section-description,
+				.hero-description {
+					// font-size: 1.3vw;
+					font-size: ($small_ratio * 1.3) * 1rem;
+					@include fluid-type($min_width, $max_width, ($small_ratio * 1.3) * $min_font, ($large_ratio * 0.52) * $max_font);
+				}
+			}
+			.secondary-panel {
+				.takeout-one {
+					top: 70%;
+					right: 50%;
+					width: 30vw;
+					min-width: 30%;
+					max-width: 100%;
+				}
+				.img-annotation {
+					width: 170px;
+				}
+			}
+		}
+	}
+}

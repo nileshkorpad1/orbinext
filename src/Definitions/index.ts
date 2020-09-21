@@ -1,1 +1,1 @@
-export { ActionConsts } from "./ActionConsts";
+export * as ActionConsts  from "./ActionConsts";

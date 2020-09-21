@@ -1,0 +1,96 @@
+section {
+	&.overview-section {
+		background-color: theme-color('primary');
+		&:before {
+			background-color: theme-color('primary');
+		}
+		.primary-panel {
+			.section-leader {
+				color: theme-color('dark');
+			}
+		}
+		.full-section {
+			.carousel {
+				.card-columns {
+					column-count: 3;
+					column-gap: 1.5rem;
+
+					@include media-breakpoint-down(lg) {
+						column-count: 2;
+					}
+
+					@include media-breakpoint-down(md) {
+						column-count: 1;
+					}
+					.section-card {
+						background-color: theme-color('primary');
+						border: none;
+						padding: 0 30px 10px 10px;
+
+						@include media-breakpoint-down(sm) {
+							border-left-width: 0;
+						}
+						.section-item {
+							height: 100%;
+							display: flex;
+							flex-direction: column;
+							align-items: flex-start;
+							justify-content: space-evenly;
+							border: none;
+							border-left: $grey-dark-2x 1px solid;
+							.section-count {
+								.count {
+									width: 40px;
+									height: 40px;
+									background-color: theme-color('secondary');
+									padding: 0.5rem 0;
+									border-radius: 50%;
+									display: inline-block;
+									text-align: center;
+									font-weight: 500;
+									font-size: ($small_ratio * 1.1) * 1rem;
+									@include fluid-type($min_width, $max_width, ($small_ratio * 1.13) * $min_font, ($large_ratio * 0.55) * $max_font);
+
+									color: $white;
+								}
+							}
+							.section-leader {
+								font-size: ($small_ratio * 0.9) * 1rem;
+								@include fluid-type($min_width, $max_width, ($small_ratio * 1.01) * $min_font, ($large_ratio * 0.52) * $max_font);
+								text-transform: uppercase;
+								color: $grey-900;
+								opacity: 0.5;
+								font-weight: 600;
+							}
+							.section-heading {
+								font-size: ($small_ratio * 1.833) * 1rem;
+								@include fluid-type($min_width, $max_width, ($small_ratio * 1.99) * $min_font, ($large_ratio * 0.82) * $max_font);
+							}
+							.section-description {
+								flex: 1 1 auto;
+							}
+							.section-image {
+								bottom: 0;
+							}
+							.section-trailer {
+								justify-self: end;
+							}
+						}
+					}
+				}
+				.carousel-control-prev {
+					display: none;
+				}
+				.carousel-control-next {
+					color: theme-color('secondary');
+					font-size: 2rem;
+					width: 1%;
+					right: 0%;
+					@include media-breakpoint-down(md) {
+						right: 0%;
+					}
+				}
+			}
+		}
+	}
+}

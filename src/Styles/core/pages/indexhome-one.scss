@@ -1,0 +1,37 @@
+@import '../../index';
+@import './partials/navsection'; //NavSection
+@import './partials/herosection'; //herosection
+@import './partials/homepricingsection'; //commonpricingsection
+@import './partials/homekeyfeaturessection'; //feature Section
+@import './partials/bookssection'; //books Section
+@import './partials/salessection'; //sales Section
+@import './partials/peoplesection'; //people Section
+@import './partials/testimonialsection'; //testimonial Section
+@import './partials/ctatypeone';
+@import './partials/overviewsection'; //overview
+@import './partials/footersection';
+@import './partials/blogpreview';
+
+// overwrites for August-Sep Home page
+.homepage-four {
+	section {
+		&.section,
+		&.section-lp {
+			.section-inner-wrapper {
+				.section-heading {
+					&.over-common-cta {
+						// for the LPCTA when coming in home-page
+						@include font-size(3.2rem);
+					}
+				}
+			}
+		}
+		&.section-lp {
+			// override the LP compact psacing
+			padding: 5rem 0;
+		}
+		.skip-on-home {
+			display: none;
+		}
+	}
+}

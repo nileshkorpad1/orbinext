@@ -1,0 +1,63 @@
+@import '../../index.scss';
+// common selector for all layered sections
+$section-layer-width: 40vw;
+
+.company {
+	&.career-page {
+		section {
+			overflow: hidden;
+			height: auto;
+			// display: flex;
+			align-items: center;
+			.secondary-panel {
+				&.parallax-banner {
+					height: 100% !important;
+					position: relative;
+					.takeout-two {
+						position: absolute;
+						bottom: 0;
+						right: 0;
+					}
+				}
+			}
+			&.leadership-section {
+				.full-section {
+					&.team-photos {
+						.card-columns {
+							column-count: 2;
+							.card {
+								background: transparent;
+								border: 0;
+								box-shadow: none;
+								overflow: hidden;
+								.photo-fluid {
+									width: 100%;
+									height: auto;
+									margin: 0 1.5rem 0 0;
+									border-radius: 0.5rem;
+								}
+							}
+						}
+					}
+				}
+				.secondary-panel {
+					.main-screenshot {
+						max-width: 35vw;
+					}
+				}
+				.background-decorator {
+					position: absolute;
+					&.top-right {
+						top: 0vw;
+						right: 0vw;
+						max-width: 15rem;
+					}
+				}
+			}
+		}
+	}
+}
+
+@import './partials/career/herosection';
+@import './partials/career/jobsection';
+@import './partials/career/leadershipsection';

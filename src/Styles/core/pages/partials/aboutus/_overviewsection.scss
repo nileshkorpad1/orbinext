@@ -1,0 +1,36 @@
+.company {
+	.aboutus {
+		&.overview-section {
+			background-color: theme-color('primary');
+			&:before {
+				background-color: darken(theme-color('primary'), 8);
+			}
+			.primary-panel {
+				.section-heading {
+					display: -ms-grid;
+					font-weight: 900;
+					line-height: 1;
+				}
+			}
+			.secondary-panel {
+				.main-screenshot {
+					width: 35rem;
+					margin: auto;
+				}
+			}
+			.background-decorator {
+				position: absolute;
+				&.top-right {
+					top: 5vw;
+					right: 8vw;
+					max-width: 10rem;
+				}
+				&.bottom-center {
+					bottom: 5vw;
+					left: 26vw;
+					max-width: 10rem;
+				}
+			}
+		}
+	}
+}

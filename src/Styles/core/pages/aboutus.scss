@@ -1,0 +1,30 @@
+@import '../../index.scss';
+// common selector for all layered sections
+$section-layer-width: 40vw;
+
+.company {
+	&.aboutus-page {
+		section {
+			&.hero-section {
+				.secondary-panel {
+					&.parallax-banner {
+						position: relative;
+						height: 100% !important;
+						.takeout-two {
+							position: absolute;
+							right: 0;
+							bottom: 0;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@import './partials/aboutus/herosection';
+@import './partials/aboutus/overviewsection';
+@import './partials/aboutus/promisingsection';
+@import './partials/aboutus/leadershipsection';
+@import './partials/aboutus/advantagessection';
+@import './partials/sectionawardsdisplay';

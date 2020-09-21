@@ -1,0 +1,32 @@
+.company {
+	.aboutus {
+		&.advantages-section {
+			background-color: theme-color('primary');
+			&:before {
+				background-color: darken(theme-color('primary'), 8);
+			}
+			.full-section {
+				.section-heading {
+					display: -ms-grid;
+					font-weight: 900;
+					line-height: 1;
+				}
+				.main-screenshot {
+				}
+			}
+			.background-decorator {
+				position: absolute;
+				&.top-right {
+					top: 9vw;
+					right: 6vw;
+					max-width: 10rem;
+				}
+				&.top-left {
+					top: 0vw;
+					left: 0vw;
+					max-width: 15rem;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,103 @@
+.product-page {
+	&.books-page {
+		section {
+			&.summary-section {
+				.secondary-panel {
+					&.parallax-banner {
+						.parallax-outer {
+							&.parallax-takeout {
+								// top: 70%;
+								// left:30%;
+								// .takeout-one {
+								// 	width: 20rem;
+								// }
+								&.takeout-one {
+									top: 75%;
+									left: 30%;
+									img.takeout-one {
+										max-width: 20rem;
+									}
+								}
+								&.takeout-two {
+									top: -10%;
+									left: 5%;
+									img.takeout-two {
+										width: auto;
+										height: auto;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	&.sales-page {
+		section {
+			&.summary-section {
+				.secondary-panel {
+					&.parallax-banner {
+						.parallax-outer {
+							&.parallax-takeout {
+								top: 65%;
+								left: 30%;
+								&.takeout-one {
+									top: 60%;
+									left: 30%;
+									img.takeout-one {
+										max-width: 20rem;
+									}
+								}
+								&.takeout-two {
+									top: -10%;
+									left: 5%;
+									img.takeout-two {
+										width: auto;
+										height: auto;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	&.people-page {
+		section {
+			&.summary-section {
+				.secondary-panel {
+					.parallax-outer {
+						&.parallax-takeout {
+							&.takeout-one {
+								top: 60%;
+								left: 10%;
+								img.takeout-one {
+									width: 50rem;
+									max-width: 100%;
+								}
+							}
+							&.takeout-two {
+								top: -10%;
+								left: 10%;
+								img.takeout-two {
+									width: auto;
+									height: auto;
+								}
+							}
+						}
+						.parallax-annotation {
+							top: 0;
+							left: 65%;
+							.img-annotation {
+								right: 80%;
+								position: relative;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,35 @@
+.company {
+	.aboutus {
+		&.leadership-section {
+			background-color: theme-color('secondary');
+
+			&:before {
+				background-color: theme-color('secondary');
+			}
+			.full-section {
+				.section-heading {
+					display: -ms-grid;
+					font-weight: 900;
+					line-height: 1;
+				}
+				.section-leader {
+					font-size: ($small_ratio * 1.6) * 1rem;
+					font-weight: 700;
+				}
+			}
+			.secondary-panel {
+				.main-screenshot {
+					width: 35rem;
+				}
+			}
+			.background-decorator {
+				position: absolute;
+				&.top-right {
+					top: 0vw;
+					right: 0vw;
+					max-width: 15rem;
+				}
+			}
+		}
+	}
+}

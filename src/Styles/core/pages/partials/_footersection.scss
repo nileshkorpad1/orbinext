@@ -1,0 +1,209 @@
+footer {
+	&.sticky {
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		top: auto;
+		right: 0;
+		z-index: 0;
+		width: 100%;
+		max-width: 100%;
+		height: auto;
+		max-width: 100vw;
+		overflow-x: hidden;
+	}
+	&.home-footer-section {
+		padding-bottom: 1 * $navbar-min-height;
+		font-size: 0.9rem;
+		font-size: ($small_ratio * 0.9) * 1rem;
+		@include fluid-type($min_width, $max_width, ($small_ratio * 0.9) * $min_font, ($large_ratio * 0.37) * $max_font);
+
+		.navbar {
+			.logo {
+				// put here anything that does not apply to actual logo
+			}
+
+			.expanded,
+			.dropdown-menu {
+				background-color: theme-color('light');
+			}
+			.block-greetings {
+				.text-greetings,
+				.text-sign-in {
+					color: theme-color('dark');
+				}
+				.btn-outline-white {
+					@include button-outline-variant(darken(theme-color('dark'), 25%));
+				}
+			}
+		}
+		a {
+			color: $grey-800;
+			white-space: nowrap;
+
+			&:hover {
+				color: $deep-red;
+			}
+		}
+		.footer-logo-link {
+			.logo {
+				width: 13.2rem;
+				display: inline-block;
+				@include media-breakpoint-down(md) {
+					width: 9rem;
+				}
+			}
+		}
+
+		ul {
+			list-style: none;
+		}
+
+		p {
+			margin-bottom: 0.7rem;
+			letter-spacing: -0.02rem;
+			font-size: 0.9rem;
+			line-height: 1.7;
+			font-weight: 500;
+			font-size: ($small_ratio * 0.9) * 1rem;
+			@include fluid-type($min_width, $max_width, ($small_ratio * 0.9) * $min_font, ($large_ratio * 0.37) * $max_font);
+		}
+
+		h3,
+		h4 {
+			margin-bottom: 0.2rem;
+			// font-size: $font-size-small;
+			font-size: ($small_ratio * 1.1) * 1rem;
+			@include fluid-type($min_width, $max_width, ($small_ratio * 1.12) * $min_font, ($large_ratio * 0.48) * $max_font);
+		}
+
+		h3 {
+			position: relative;
+			margin-bottom: 0.5rem;
+			border-bottom: 1px solid $grey-500;
+			span.ascent-base {
+				display: inline-block;
+				line-height: 0.3;
+
+				&:after {
+					position: relative;
+					bottom: -5px;
+					left: 0;
+					display: inline-block;
+					width: 100%;
+					height: 3px;
+					background-color: $red-dark;
+					content: '';
+				}
+			}
+		}
+		.image-badge {
+			max-height: 2.4rem;
+		}
+		.bottom-separator {
+			border-top: 0.08rem solid $grey-500;
+		}
+		.country-switcher {
+			p {
+				margin-bottom: 0.3rem;
+			}
+			.country-name {
+				&:after {
+					content: '';
+					margin: 0 0.7rem;
+					border-right: 0.08rem solid darken($grey-100, 20%);
+				}
+				&:last-of-type {
+					&:after {
+						display: none;
+					}
+				}
+				@include media-breakpoint-down(md) {
+					&:nth-child(3) {
+						&:after {
+							display: none;
+						}
+					}
+				}
+			}
+		}
+		.popover {
+			.country-logo {
+				display: inline-block;
+			}
+		}
+		.social-icon-link {
+			margin: 0.5rem;
+			max-width: 2.35rem;
+			text-align: right;
+			// font-size: $font-size-small;
+			font-size: ($small_ratio * 1) * 1rem;
+			@include fluid-type($min_width, $max_width, ($small_ratio * 1.02) * $min_font, ($large_ratio * 0.408) * $max_font);
+			&:last-of-type {
+				margin-right: 0;
+			}
+		}
+	}
+}
+section {
+	&.secondary-footer {
+		position: fixed;
+		bottom: -10%;
+		z-index: 9;
+		width: 100%;
+		transition: all 0.5s;
+		height: 0;
+		padding: $navbar-min-height/6 0;
+		&.sticky {
+			visibility: visible;
+			height: auto;
+			bottom: 0;
+		}
+		.sticky-footer-button {
+			.btn-sign-in {
+				@include button-variant(
+					$white,
+					$grey-400,
+					$hover-background: $grey-700,
+					$hover-border: $grey-700,
+					$active-background: $grey-600,
+					$active-border: $grey-600
+				);
+			}
+		}
+		&:before {
+			background-color: theme-color('dark');
+		}
+	}
+}
+footer,
+.tiny-footer {
+	.footer-links {
+		a {
+			color: $grey-800;
+			white-space: nowrap;
+			&:hover {
+				color: $deep-red;
+			}
+		}
+		.footer-links-item {
+			&:after {
+				margin: 0 0.7rem;
+				content: '';
+				border-right: 0.08rem solid darken($grey-100, 20%);
+			}
+			&:last-of-type {
+				&:after {
+					display: none;
+				}
+			}
+			@include media-breakpoint-down(md) {
+				&:nth-child(3) {
+					&:after {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+}

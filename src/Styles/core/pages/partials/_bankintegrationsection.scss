@@ -1,0 +1,41 @@
+section {
+	&.bank-integration-section {
+		// min-height: 100vh;
+		overflow: hidden;
+		background-color: $white;
+
+		&:before {
+			background-color: theme-color('secondary');
+		}
+		.divider {
+			padding: $navbar-min-height 0;
+		}
+		.main-screenshot {
+			width: 100%;
+			height: auto;
+		}
+		.btn-readmore {
+			padding-left: 0;
+			color: $white;
+		}
+		.secondary-panel {
+			.parallax-outer {
+				&.parallax-takeout {
+					top: 60%;
+					left: 10%;
+					.takeout-one {
+						max-width: 75%;
+						width: 40vw;
+					}
+				}
+				&.parallax-annotation {
+					top: 15%;
+					left: 78%;
+					img {
+						width: 192px;
+					}
+				}
+			}
+		}
+	}
+}

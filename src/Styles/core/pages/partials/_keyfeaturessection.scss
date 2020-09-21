@@ -1,0 +1,134 @@
+section {
+	&.key-features-section {
+		background: theme-color('primary');
+		overflow: visible;
+
+		&:before {
+			background-color: theme-color('secondary');
+		}
+		.divider {
+			padding: $navbar-min-height/2 0;
+		}
+
+		.scrolly {
+			.vertical-carousel {
+				margin-top: 5rem;
+				.list-group {
+					.list-group-item {
+						border: none;
+						transition: opacity 0.25s ease-out;
+						opacity: 0.5;
+						background-color: transparent;
+						&.active,
+						&:hover {
+							border-radius: 0.5vw;
+							// background-color: $grey-light-5x;
+							background-color: transparent;
+							color: $body-color;
+							opacity: 1;
+
+							&:after {
+								position: absolute;
+								top: 0;
+								left: 0;
+								z-index: -1;
+								display: block;
+								width: 45vw;
+								height: 100%;
+								border-radius: 0.5vw;
+								// background-color: $grey-light-5x;
+								color: $body-color;
+								content: '';
+							}
+						}
+					}
+				}
+			}
+
+			.sticky {
+				position: -webkit-sticky;
+				position: sticky;
+				width: 100%;
+				margin: 0;
+				top: 50%;
+				right: 0;
+			}
+
+			.secondary-panel {
+				max-height: max-content !important;
+				max-width: max-content !important;
+				text-align: center;
+				margin: 0 auto;
+
+				.step-wrapper {
+					flex-wrap: wrap;
+					flex: 1 1;
+				}
+				.step {
+					position: relative;
+					z-index: 2;
+					width: 100%;
+					&.books {
+						.parallax-outer {
+							&.parallax-takeout {
+								top: 55%;
+								left: 40%;
+								.takeout-one {
+									width: 260px;
+								}
+							}
+							&.parallax-annotation {
+								top: 10%;
+								left: 76%;
+								.img-annotation {
+									width: 200px;
+								}
+							}
+						}
+					}
+					&.sales {
+						.parallax-outer {
+							top: 75%;
+							left: 40%;
+							&.parallax-takeout {
+								.takeout-one {
+									width: 360px;
+								}
+							}
+							&.parallax-annotation {
+								top: 10%;
+								left: 76%;
+								.img-annotation {
+									min-width: 200px;
+								}
+							}
+						}
+					}
+					&.people {
+						.parallax-outer {
+							top: 75%;
+							left: 40%;
+							&.parallax-takeout {
+								top: 80%;
+								left: 20%;
+								.takeout-one {
+									width: 80%;
+								}
+							}
+							&.parallax-annotation {
+								top: 10%;
+								left: 76%;
+								.img-annotation {
+									width: 200px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		.post-section {
+			margin-bottom: 0;
+		}
+	}
+}

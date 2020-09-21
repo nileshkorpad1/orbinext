@@ -1,0 +1,95 @@
+.product-page {
+	&.books-page {
+		section {
+			&.details-section {
+				.secondary-panel {
+					&.parallax-banner {
+						margin-top: 1rem;
+						.parallax-outer {
+							top: 50%;
+							left: 10%;
+							&.parallax-takeout {
+								&.takeout-one {
+									top: 75%;
+									left: 10%;
+									img.takeout-one {
+										max-width: 100%;
+									}
+								}
+								&.takeout-two {
+									top: -10%;
+									left: 5%;
+									img.takeout-two {
+										width: auto;
+										height: auto;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	&.sales-page {
+		section {
+			&.details-section {
+				.secondary-panel {
+					&.parallax-banner {
+						.parallax-outer {
+							&.parallax-takeout {
+								&.takeout-one {
+									top: 60%;
+									left: 30%;
+									img.takeout-one {
+										max-width: 20rem;
+									}
+								}
+								&.takeout-two {
+									top: -10%;
+									left: 5%;
+									img.takeout-two {
+										width: auto;
+										height: auto;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	&.people-page {
+		section {
+			&.details-section {
+				.parallax-outer {
+					&.parallax-takeout {
+						&.takeout-one {
+							top: 75%;
+							left: 30%;
+							img.takeout-one {
+								max-width: 18rem;
+							}
+						}
+						&.takeout-two {
+							top: -10%;
+							left: 40%;
+							img.takeout-two {
+								width: auto;
+								height: auto;
+							}
+						}
+					}
+					&.parallax-annotation {
+						top: 50%;
+						left: 65%;
+						img {
+							width: 20rem;
+						}
+					}
+				}
+			}
+		}
+	}
+}

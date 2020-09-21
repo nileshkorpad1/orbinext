@@ -1,0 +1,26 @@
+.company {
+	.career {
+		&.hero-section {
+			min-height: 100vh;
+			background-color: $white;
+			&:before {
+				background-color: theme-color('light');
+			}
+			.primary-panel {
+				.section-heading,
+				.hero-heading {
+					color: theme-color('secondary');
+					display: block;
+					width: auto;
+					font-size: ($small_ratio * 3.18) * 1rem;
+					@include fluid-type($min_width, $max_width, ($small_ratio * 3.22) * $min_font, ($large_ratio * 1.89) * $max_font);
+				}
+				.section-description,
+				.hero-description {
+					font-size: ($small_ratio * 1.3) * 1rem;
+					@include fluid-type($min_width, $max_width, ($small_ratio * 1.3) * $min_font, ($large_ratio * 0.52) * $max_font);
+				}
+			}
+		}
+	}
+}

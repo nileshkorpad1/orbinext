@@ -1,0 +1,867 @@
+section {
+	// Current Generic Pricing
+	&.new-pricing-section,
+	&.home-pricing-section {
+		z-index: 2;
+		// min-height: 100vh;
+		// background: $grey-light-5x;
+		background-image: url('../../../../assets/images/texture-waves.png');
+		background-repeat: repeat-x;
+		background-position: 0 0;
+		background-size: cover;
+
+		&:before {
+			background: transparent;
+		}
+
+		.plan-details,
+		.nav-pricing-plan {
+			// z-index: 10;
+			padding: 0;
+			width: 100%;
+			height: 100%;
+			text-align: left;
+
+			.plan-card {
+				position: relative;
+				margin-top: $plan-card-padding;
+				margin-bottom: -$plan-card-padding;
+				padding: $plan-card-padding/1.33 $plan-card-padding 0;
+				padding-top: $plan-card-padding * 2;
+				height: 100%;
+				border: 0.08rem solid $grey-200;
+				border-top-width: 0.3rem;
+				border-top-color: $dark;
+				border-radius: 5px;
+				background-color: $white;
+				box-shadow: 0 0.4rem 0.4rem transparentize($color: theme-color('dark'), $amount: 0.9);
+				@include font-size(1rem);
+				text-align: left;
+
+				&:hover {
+					box-shadow: 0 0 0.9rem transparentize($color: theme-color('dark'), $amount: 0.8);
+					border-color: $grey-300;
+					border-top-color: $dark-wine-red;
+				}
+				.product-name {
+					text-transform: uppercase;
+					@include font-size(1.12rem);
+					font-weight: 500;
+				}
+				.plan-name {
+					position: relative;
+					font-weight: 900;
+					@include font-size(2.6rem);
+					.ascent-base {
+						position: relative;
+						display: inline-block;
+						&:after {
+							position: absolute;
+							left: 0;
+							display: inline-block;
+							width: 100%;
+							height: $plan-card-padding/1.11;
+							border-bottom: 0.16rem solid theme-color('secondary');
+							content: '';
+						}
+					}
+				}
+				.pricing-text {
+					margin-bottom: 0;
+					@include font-size(1rem);
+					@include media-breakpoint-up(md) {
+						min-height: 10rem;
+					}
+					@include media-breakpoint-up(lg) {
+						min-height: 7.3rem;
+					}
+					@include media-breakpoint-up(xl) {
+						min-height: 6.8rem;
+					}
+				}
+
+				.plan-price {
+					margin: 0;
+					font-weight: 500;
+					@include font-size(($large_ratio * 0.567) * $max_font);
+					font-family: $headings-font-family;
+					line-height: 1;
+					vertical-align: text-top;
+
+					sup {
+						top: $plan-card-padding/4;
+
+						@include font-size(($large_ratio * 0.567) * $max_font);
+					}
+
+					span {
+						font-weight: 700;
+						// font-size: $font-size-base;
+						font-family: $font-family-base;
+						line-height: 1;
+						vertical-align: text-top;
+						&.plan-price-value {
+							font-weight: 900;
+							@include font-size(5rem);
+							line-height: 1;
+							vertical-align: text-top;
+						}
+					}
+				}
+				.plan-user {
+					font-size: ($small_ratio * 1) * 1rem;
+					@include fluid-type($min_width, $max_width, ($small_ratio * 1) * $min_font, ($large_ratio * 0.347) * $max_font);
+					margin: 0;
+				}
+				.btn {
+					font-size: ($small_ratio * 1.1) * 1rem;
+					@include fluid-type($min_width, $max_width, ($small_ratio * 1.1) * $min_font, ($large_ratio * 0.424) * $max_font);
+					margin: $plan-card-padding/5 auto;
+					font-weight: 600;
+					border-width: 0.1rem;
+					padding: 1.01rem;
+					&-free {
+					}
+					&-buy {
+					}
+				}
+
+				.sales-range-slider {
+					&.essential {
+						.range-slider-track {
+							&.range-slider-track-0 {
+								background: $dark;
+							}
+							&.range-slider-track-1 {
+								background: $white;
+							}
+						}
+					}
+				}
+
+				.plan-features-wrapper {
+					padding-bottom: $plan-card-padding * 2; //for absolute-positioned .summary-container
+
+					@include media-breakpoint-up(md) {
+						padding-bottom: $plan-card-padding * 3;
+					}
+					@include media-breakpoint-up(lg) {
+						padding-bottom: $plan-card-padding * 2;
+					}
+					@include media-breakpoint-up(xl) {
+						padding-bottom: $plan-card-padding * 2;
+					}
+					.accordion {
+						.card,
+						.card-header {
+							border: none;
+							background-color: inherit;
+						}
+						.card {
+							margin-right: -$plan-card-padding;
+							margin-left: -$plan-card-padding;
+						}
+						.card-header {
+							padding: $plan-card-padding/2.7 $plan-card-padding;
+							font-weight: 500;
+
+							&:hover-skip {
+								background-color: transparentize(#000000, 0.9);
+							}
+							&:before {
+								margin-right: $plan-card-padding/4;
+								padding: 0.25rem;
+								border: 0.08vw solid $grey-700;
+								border-radius: 50%;
+								color: $grey-700;
+								content: '\f14a';
+								content: '\f00c';
+								vertical-align: middle;
+								font-size: $plan-card-padding/3.5;
+								font-family: $font-family-awesome;
+							}
+							&.plan-feature-list,
+							& + .collapse.show {
+								&:after {
+									position: absolute;
+									top: $plan-card-padding/2.7;
+									right: 0;
+									margin-right: $plan-card-padding/2;
+									padding: 0.3rem;
+									width: 1.2rem;
+									height: 1.2rem;
+									border-radius: 50%;
+									color: $grey-800;
+									content: '\f067';
+									vertical-align: middle;
+									font-size: 0.7rem;
+									font-family: $font-family-awesome;
+									line-height: 1;
+								}
+								&:hover {
+									& + .collapse.show:after {
+										display: none;
+										background-color: transparent;
+										transform: none;
+									}
+								}
+							}
+							& + .collapse.show:after {
+								background-color: #fff;
+								transform: rotate(45deg);
+							}
+						}
+						.card-body {
+							padding: 0 $plan-card-padding;
+							background-color: $grey-200;
+
+							ul.features-list {
+								margin: 0;
+								padding: 0;
+								list-style: none;
+
+								.feature-list-item {
+									padding: $plan-card-padding/5 $plan-card-padding $plan-card-padding/5 $plan-card-padding/1.1;
+									font-size: ($small_ratio * 0.777) * 1rem;
+									@include fluid-type(
+										$min_width,
+										$max_width,
+										($small_ratio * 0.777) * $min_font,
+										($large_ratio * 0.357) * $max_font
+									);
+									&:before {
+										margin-right: $plan-card-padding/4;
+										margin-left: -$plan-card-padding/1.11;
+										padding: 0.3rem;
+										border-radius: 50%;
+										color: $grey-700;
+										content: '\f14a';
+										content: '\f00c';
+										vertical-align: middle;
+										font-size: 0.65rem;
+										font-family: $font-family-awesome;
+										line-height: 1;
+									}
+								}
+							}
+						}
+					}
+				}
+				.card-label {
+					position: absolute;
+					top: -0.08rem;
+					bottom: auto;
+					right: 0;
+					left: 0;
+					margin: 0 -0.16rem;
+
+					.label-text {
+						margin: -1rem auto;
+						padding: 0.5rem 1.15rem;
+						border-radius: 0 0 0.3rem 0.3rem;
+						vertical-align: text-top;
+						text-align: center;
+						font-weight: 500;
+						font-family: $font-family-base;
+						@include font-size(0.85rem);
+						line-height: 1;
+						width: max-content;
+					}
+					&.plan-popular-label {
+						.label-text {
+							background-color: lighten($yellow, 5);
+							border: 0.08rem solid lighten($yellow, 5);
+						}
+						@include media-breakpoint-down(sm) {
+							top: 0;
+							left: auto;
+							right: 10%;
+							width: 30%;
+							z-index: 0 !important;
+							.label-text {
+								border-radius: 0 0 0.3rem 0.3rem;
+								margin: 0 0 0 auto;
+							}
+						}
+					}
+					&.plan-active-label {
+						position: absolute;
+						top: -0.08rem;
+						bottom: auto;
+						right: 0;
+						left: 0;
+						margin: 0 -0.08rem;
+						.label-text {
+							background-color: theme-color('dark');
+							border: 0.08rem solid theme-color('dark');
+							color: $white;
+							border-radius: 0;
+						}
+					}
+				}
+			}
+			&.active-subscribed-plan {
+				.plan-card {
+					// padding-bottom: $plan-card-padding * 2;
+					// border-color: theme-color('dark') !important;
+					// .summary-container {
+					// 	bottom: $plan-card-padding * 2;
+					// }
+				}
+			}
+			&.individual {
+				.btn-free {
+					line-height: 4;
+				}
+			}
+			&.essential {
+				// z-index: 11;
+				.plan-card {
+					// border-color: lighten($yellow, 5);
+					border-top-color: lighten(theme-color('contrast'), 1);
+					background-color: lighten($yellow, 34%);
+
+					.plan-popular-label {
+						.label-text {
+							background-color: lighten(theme-color('contrast'), 1);
+							border: 0.08rem solid lighten(theme-color('contrast'), 1);
+							color: $white;
+						}
+					}
+					.plan-features-wrapper-skip {
+						.accordion {
+							.card-header {
+								&:hover {
+									background-color: darken(theme-color('primary'), 10);
+								}
+								& + .collapse.show:after {
+									background-color: theme-color('primary');
+									transform: rotate(45deg);
+								}
+							}
+							.card-body {
+								background-color: darken($yellow, 10);
+							}
+						}
+					}
+					.action-container {
+						border-color: darken(theme-color('primary'), 15);
+						.btn-buy {
+						}
+						.btn-free {
+						}
+					}
+				}
+			}
+			&.professional {
+			}
+
+			.action-container,
+			.summary-container {
+				margin-right: -$plan-card-padding;
+				margin-left: -$plan-card-padding;
+				padding: $plan-card-padding/2 $plan-card-padding;
+				// min-height: $plan-card-padding * 4;
+				border: 0.08rem solid $grey-400;
+				border-width: 0;
+			}
+			.action-container {
+				text-align: center;
+				padding-top: 0;
+			}
+			.summary-container {
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				text-align: center;
+				margin: 0;
+			}
+		}
+
+		// Common Pricing Scaffolding
+		.pricing-container-wrapper {
+			.plan-tab-navstrip {
+				border-bottom: 0 solid $deep-red;
+				background: $grey-light-5x !important;
+				font-weight: 600;
+
+				.tabs-on-top {
+					margin-top: -7%;
+				}
+
+				.nav-item {
+					white-space: nowrap;
+					min-width: max-content;
+					.nav-link {
+						border: 0.08rem solid $grey-dark-2x;
+						border-bottom-width: 0;
+						border-radius: 0;
+						background-color: $white;
+						color: theme-color('dark');
+						padding: 0.8rem;
+						text-align: center;
+						font-size: ($small_ratio * 1) * 1rem;
+						@include fluid-type($min_width, $max_width, ($small_ratio * 1.04) * $min_font, ($large_ratio * 0.424) * $max_font);
+						min-width: max-content;
+
+						@include media-breakpoint-down(md) {
+							font-size: ($small_ratio * 0.75) * 1rem;
+							@include fluid-type($min_width, $max_width, ($small_ratio * 0.8) * $min_font, ($large_ratio * 0.424) * $max_font);
+						}
+
+						&.active {
+							border-color: $deep-red;
+							border-bottom: 0.08rem solid $deep-red;
+							border-radius: 0;
+							padding: 0.8rem 3rem;
+							background-color: $deep-red;
+							color: $white;
+							&#pricing-tab-books {
+								border-color: $product-books;
+								background-color: $product-books;
+								border-bottom: 0.08rem solid $product-books;
+							}
+							&#pricing-tab-sales {
+								border-color: $product-sales;
+								background-color: $product-sales;
+								border-bottom: 0.08rem solid $product-sales;
+							}
+							&#pricing-tab-people {
+								border-color: $product-people;
+								background-color: $product-people;
+								border-bottom: 0.08rem solid $product-people;
+							}
+							@include media-breakpoint-down(md) {
+								padding: 0.8rem 1rem;
+							}
+						}
+					}
+				}
+			}
+
+			.tab-content {
+				.tab-pane {
+					&:before {
+						content: '';
+						width: 100%;
+						height: 1px;
+						position: absolute;
+						left: 0;
+						// border-top: 0.23rem solid $deep-red;
+						border: none;
+						transition: all 0.3s ease-in;
+					}
+					&#pricing-tabpane-books {
+						&:before {
+							border-color: $product-books;
+						}
+						.essential {
+							.plan-card {
+								border-top-color: lighten($product-books, 10);
+								background-color: lighten($product-books, 45%);
+
+								.plan-popular-label {
+									.label-text {
+										background-color: lighten($product-books, 40);
+										border-color: lighten($product-books, 20);
+										color: lighten($product-books, 10);
+									}
+								}
+								.plan-features-wrapper-skip {
+									.accordion {
+										.card-header {
+											&:before,
+											&:after {
+												color: $grey-100;
+												border-color: $grey-100;
+											}
+											&:hover {
+												background-color: darken($product-books, 10);
+											}
+											& + .collapse.show:after {
+												color: $grey-100;
+												background-color: $product-books;
+												transform: rotate(45deg);
+											}
+										}
+										.card-body {
+											background-color: darken($product-books, 10);
+											.feature-list-item {
+												&:before {
+													color: $grey-100;
+												}
+											}
+										}
+									}
+								}
+								.action-container-skip {
+									border-color: darken($product-books, 15);
+									.btn-buy {
+										@include button-variant(
+											darken($product-books, 60),
+											$grey-700,
+											$hover-background: color-yiq($product-books),
+											$hover-border: darken(color-yiq($product-books), 75),
+											$active-background: darken(color-yiq($product-books), 10),
+											$active-border: darken(color-yiq($product-books), 60)
+										);
+										border-color: darken($product-books, 60);
+									}
+									.btn-free {
+										@include button-variant(
+											transparentize(#fff, 1),
+											$grey-600,
+											$hover-background: $grey-700,
+											$hover-border: $grey-700,
+											$active-background: $grey-600,
+											$active-border: $grey-600
+										);
+									}
+								}
+							}
+						}
+						.plan-duration-toggle {
+							.btn-group {
+								&.btn-group-toggle {
+									.btn-primary {
+										&.active {
+											@include button-variant(transparentize($product-books, 0.6), darken($white, 7.5%));
+										}
+									}
+								}
+							}
+						}
+						h5 {
+							a,
+							a:active {
+								color: inherit;
+							}
+						}
+					}
+					&#pricing-tabpane-sales {
+						&:before {
+							border-color: $product-sales;
+						}
+						.essential {
+							.plan-card {
+								border-top-color: lighten($product-sales, 10);
+								background-color: lighten($product-sales, 58%);
+
+								.plan-popular-label {
+									.label-text {
+										background-color: lighten($product-sales, 50);
+										border-color: lighten($product-sales, 20);
+										color: lighten($product-sales, 2);
+									}
+								}
+								.plan-features-wrapper-skip {
+									.accordion {
+										.card-header {
+											&:before,
+											&:after {
+												color: $grey-100;
+												border-color: $grey-100;
+											}
+											&:hover {
+												background-color: darken($product-sales, 10);
+											}
+											& + .collapse.show:after {
+												color: $grey-100;
+												background-color: $product-sales;
+												transform: rotate(45deg);
+											}
+										}
+										.card-body {
+											background-color: darken($product-sales, 10);
+											.feature-list-item {
+												&:before {
+													color: $grey-100;
+												}
+											}
+										}
+									}
+								}
+								.action-container-skip {
+									border-color: darken($product-sales, 15);
+									.btn-buy {
+										@include button-variant(
+											darken($product-sales, 60),
+											$grey-700,
+											$hover-background: color-yiq($product-sales),
+											$hover-border: darken(color-yiq($product-sales), 75),
+											$active-background: darken(color-yiq($product-sales), 10),
+											$active-border: darken(color-yiq($product-sales), 10)
+										);
+										border-color: darken($product-sales, 60);
+									}
+									.btn-free {
+										@include button-variant(
+											transparentize(#fff, 1),
+											$grey-600,
+											$hover-background: $grey-700,
+											$hover-border: $grey-700,
+											$active-background: $grey-600,
+											$active-border: $grey-600
+										);
+									}
+								}
+							}
+						}
+						.plan-duration-toggle {
+							.btn-group {
+								&.btn-group-toggle {
+									.btn-primary {
+										&.active {
+											@include button-variant(transparentize($product-sales, 0.6), darken($white, 7.5%));
+										}
+									}
+								}
+							}
+						}
+						h5 {
+							a,
+							a:active {
+								color: inherit;
+							}
+						}
+					}
+					&#pricing-tabpane-people {
+						&:before {
+							border-color: $product-people;
+						}
+						.essential {
+							.plan-card {
+								border-top-color: lighten($product-people, 10);
+								background-color: lighten($product-people, 43%);
+								.plan-popular-label {
+									.label-text {
+										background-color: lighten($product-people, 40);
+										border-color: lighten($product-people, 10);
+										color: lighten($product-people, 10);
+									}
+								}
+								.plan-features-wrapper-skip {
+									.accordion {
+										.card-header {
+											&:before,
+											&:after {
+												color: $grey-100;
+												border-color: $grey-100;
+											}
+											&:hover {
+												background-color: darken($product-people, 10);
+											}
+											& + .collapse.show:after {
+												color: $grey-100;
+												background-color: $product-people;
+												transform: rotate(45deg);
+											}
+										}
+										.card-body {
+											background-color: darken($product-people, 10);
+											.feature-list-item {
+												&:before {
+													color: $grey-100;
+												}
+											}
+										}
+									}
+								}
+								.action-container-skip {
+									border-color: darken($product-people, 15);
+									.btn-buy {
+										@include button-variant(
+											darken($product-people, 30),
+											$grey-700,
+											$hover-background: color-yiq($product-people),
+											$hover-border: darken(color-yiq($product-people), 75),
+											$active-background: darken(color-yiq($product-people), 10),
+											$active-border: darken(color-yiq($product-people), 10)
+										);
+										border-color: darken($product-people, 30);
+									}
+									.btn-free {
+										@include button-variant(
+											transparentize(#fff, 1),
+											$grey-600,
+											$hover-background: $grey-700,
+											$hover-border: $grey-700,
+											$active-background: $grey-600,
+											$active-border: $grey-600
+										);
+									}
+								}
+							}
+						}
+						.plan-duration-toggle {
+							.btn-group {
+								&.btn-group-toggle {
+									.btn-primary {
+										&.active {
+											@include button-variant(transparentize($product-people, 0.6), darken($white, 7.5%));
+										}
+									}
+								}
+							}
+						}
+						h5 {
+							a,
+							a:active {
+								color: inherit;
+							}
+						}
+					}
+				}
+			}
+		}
+		.plan-duration-toggle {
+			// padding-bottom: 20vh+10;
+			.btn-group {
+				&.btn-group-toggle {
+					position: relative;
+					z-index: 456;
+					padding: 0.08rem;
+					border: 0.08rem solid transparentize($color: theme-color('dark'), $amount: 0.8);
+					box-shadow: 0.16rem 0.16rem 0.36rem transparentize($color: theme-color('dark'), $amount: 0.8);
+					border-radius: 0.25rem;
+
+					background: $white;
+
+					.btn-primary {
+						margin: 0.16vw;
+						border: none;
+						border-radius: 0.25rem;
+
+						@include button-variant($white, darken($white, 7.5%));
+						font-weight: 500;
+						@include font-size(0.95rem);
+						&:hover {
+							background-color: $white;
+						}
+
+						&.active {
+							font-weight: 500;
+
+							@include button-variant(transparentize(theme-color('primary'), 0.6), darken($white, 7.5%));
+						}
+					}
+				}
+			}
+		}
+		.post-section {
+			margin-top: 0;
+			margin-bottom: 0;
+
+			.down-button {
+				margin: 0 1vw 0 0;
+			}
+			h5 {
+				font-weight: 500;
+				letter-spacing: 0;
+				vertical-align: middle;
+				margin-bottom: 0.24rem;
+				margin-top: 0.08rem;
+				line-height: 1.5;
+				font-family: $font-family-base;
+				font-size: ($small_ratio * 1.1) * 1rem;
+
+				@include fluid-type($min_width, $max_width, ($small_ratio * 1.1) * $min_font, ($large_ratio/1.5) * $min_font);
+			}
+		}
+	}
+	.feature-tooltip {
+		display: contents;
+		// position: absolute;
+		cursor: pointer;
+		.tooltip-symbol {
+			background-color: $grey-400;
+			color: $white;
+			border-radius: 50%;
+			text-align: center;
+			padding: 2px 5px;
+			width: 15px;
+		}
+		.tooltip-master {
+			position: absolute;
+			visibility: hidden;
+			z-index: 9999999;
+			opacity: 0;
+			-webkit-transition: opacity 0.5s linear;
+			-moz-transition: opacity 0.5s linear;
+			-o-transition: opacity 0.5s linear;
+			transition: opacity 0.5s linear;
+			.tooltip-text {
+				background-color: $black;
+				color: $white;
+				width: 225px;
+				height: auto;
+				text-align: center;
+				padding: 0.4rem;
+				border-radius: 5px;
+				z-index: 999999999;
+				display: inline-block;
+			}
+		}
+		&:hover {
+			.tooltip-master {
+				visibility: visible;
+				opacity: 1;
+			}
+		}
+	}
+}
+// for Demo, or non-logged in user to NOT have buy now, but have Free button with focus
+.is-visitor {
+	// &:not(.page-pricing-detailed) {
+	.plan-details {
+		// .btn.btn-buy {
+		// 	display: none;
+		// }
+
+		&.essential {
+			.btn.btn-free {
+				@include button-variant(
+					theme-color('dark'),
+					theme-color('dark'),
+					$hover-background: $yellow,
+					$hover-border: darken($yellow, 10%),
+					$active-background: darken($orange, 10%),
+					$active-border: darken($orange, 12.5%)
+				);
+				color: $yellow;
+				font-weight: 800;
+			}
+		}
+	}
+	// }
+	// &.page-pricing-detailed-skip {
+	// 	.plan-details {
+	// 		.btn.btn-buy,
+	// 		.btn.btn-try {
+	// 			@include button-variant(
+	// 				$white,
+	// 				theme-color('dark'),
+	// 				$hover-background: $yellow,
+	// 				$hover-border: darken($yellow, 10%),
+	// 				$active-background: darken($orange, 10%),
+	// 				$active-border: darken($orange, 12.5%)
+	// 			);
+	// 		}
+
+	// 		&.essential {
+	// 			.btn.btn-buy {
+	// 				@include button-variant(
+	// 					theme-color('dark'),
+	// 					theme-color('dark'),
+	// 					$hover-background: $yellow,
+	// 					$hover-border: darken($yellow, 10%),
+	// 					$active-background: darken($orange, 10%),
+	// 					$active-border: darken($orange, 12.5%)
+	// 				);
+	// 				color: $yellow;
+	// 			}
+	// 		}
+	// 	}
+	// }
+}

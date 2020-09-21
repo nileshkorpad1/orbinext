@@ -1,0 +1,43 @@
+section {
+	&.compliance-section {
+		margin: 0;
+		overflow: hidden;
+		// min-height: 100vh;
+		background-color: theme-color('light');
+
+		&:before {
+			background-color: theme-color('secondary');
+		}
+		.divider {
+			padding: $navbar-min-height/1.1 0;
+		}
+		.main-screenshot {
+			width: 100%;
+			height: auto;
+		}
+		.btn-readmore {
+			padding-left: 0;
+			color: $white;
+		}
+		.secondary-panel {
+			.parallax-outer {
+				&.parallax-takeout {
+					top: 55%;
+					left: 35%;
+					.takeout-one {
+						width: 21rem;
+						min-width: 30%;
+						max-width: 100%;
+					}
+				}
+				&.parallax-annotation {
+					top: 45%;
+					left: 75%;
+					.img-annotation {
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+}

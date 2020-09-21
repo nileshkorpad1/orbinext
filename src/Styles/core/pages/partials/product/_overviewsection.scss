@@ -1,0 +1,24 @@
+.product-page {
+	&.books-page,
+	&.sales-page,
+	&.people-page {
+		section {
+			&.overview-section {
+				.primary-panel {
+					.section-leader {
+						color: theme-color('dark');
+					}
+				}
+				.full-panel {
+					.section-trailer {
+						.btn-learn-more {
+							padding: 0.7rem 2rem;
+							font-weight: 700;
+							box-shadow: 5px 5px 20px $grey-dark-2x;
+						}
+					}
+				}
+			}
+		}
+	}
+}

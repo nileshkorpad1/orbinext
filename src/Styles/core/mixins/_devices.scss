@@ -1,0 +1,105 @@
+@mixin iphone-x-size($scale) {
+	padding: $border-width;
+	max-width: $phone-width;
+	border-radius: $border-radius;
+	$border-width: 15px * $scale;
+	$phone-width: 375px * $scale;
+	$border-radius: 40px * $scale;
+	$notch-width: 209px * $scale;
+	$notch-height: 35px * $scale;
+	$notch-border-radius: 20px * $scale;
+
+	.screen {
+		img {
+			border-radius: $border-radius / 2;
+		}
+	}
+
+	.notch {
+		width: $notch-width;
+		height: $notch-height;
+		border-radius: $notch-border-radius;
+	}
+}
+
+// refer https://stackoverflow.com/questions/47987496/bootstrap-4-containers-grid-error-while-compiling-scss
+// ............................
+// Minimum breakpoint width. Null for the smallest (first) breakpoint.
+//
+//    >> breakpoint-min(sm, (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px))
+//    576px
+@function breakpoint-min($name, $breakpoints: $grid-breakpoints) {
+	$min: map-get($breakpoints, $name);
+	@return if($min != 0, $min, null);
+}
+
+@mixin make-container() {
+	margin-right: auto;
+	margin-left: auto;
+	padding-right: ($grid-gutter-width / 2);
+	padding-left: ($grid-gutter-width / 2);
+	width: 100%;
+}
+
+// Media of at least the minimum breakpoint width. No query for the smallest breakpoint.
+// Makes the @content apply to the given breakpoint and wider.
+@mixin media-breakpoint-up($name, $breakpoints: $grid-breakpoints) {
+	$min: breakpoint-min($name, $breakpoints);
+	@if $min {
+		@media (min-width: $min) {
+			@content;
+		}
+	} @else {
+		@content;
+	}
+}
+
+// For each breakpoint, define the maximum width of the container in a media query
+@mixin make-container-max-widths($max-widths: $container-max-widths, $breakpoints: $grid-breakpoints) {
+	@each $breakpoint, $container-max-width in $max-widths {
+		@include media-breakpoint-up($breakpoint, $breakpoints) {
+			max-width: $container-max-width;
+		}
+	}
+}
+
+// begin Mixin for Fluid Typography from https://css-tricks.com/snippets/css/fluid-typography/
+@function strip-unit($value) {
+	@return $value / ($value * 0 + 1);
+}
+
+@mixin fluid-type($min-vw, $max-vw, $min-font-size, $max-font-size) {
+	$u1: unit($min-vw);
+	$u2: unit($max-vw);
+	$u3: unit($min-font-size);
+	$u4: unit($max-font-size);
+
+	@if $u1 == $u2 and $u1 == $u3 and $u1 == $u4 {
+		& {
+			font-size: $min-font-size;
+			@media screen and (min-width: $min-vw) {
+				font-size: calc(
+					#{$min-font-size} + #{strip-unit($max-font-size - $min-font-size)} * ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)})
+				);
+				// always keep in one line, check after save/auto-format
+			}
+			@media screen and (min-width: $max-vw) {
+				font-size: $max-font-size;
+			}
+		}
+	}
+}
+
+// end Mixin for Fluid Typography
+@if $enable-grid-classes {
+	.container {
+		@include make-container();
+		@include make-container-max-widths();
+	}
+}
+
+@if $enable-grid-classes {
+	.container-fluid {
+		@include make-container();
+	}
+}

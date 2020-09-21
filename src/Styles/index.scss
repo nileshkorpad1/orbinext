@@ -1,0 +1,29 @@
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ * Title:   Deskera Website - Main CSS file
+ * Author:  https://www.deskera.com | www.deskera.com
+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+[ TABLE OF CONTENTS ]
+
+
+8. PAGE HEADING
+9. CUSTOM
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+// Import page styles. Do not remove these references.
+@import '~@fortawesome/fontawesome-free/scss/variables';
+@import '~angled-edges/angled-edges';
+
+//Bootstrap
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+
+// override the theme specific variable override on top of import bootstrap
+@import './variables/override';
+
+/* override the !default vars with the values we set above */
+@import '~bootstrap/scss/bootstrap';
+
+//Variables
+@import './__reset';
+@import './__variables';
+@import './__core';

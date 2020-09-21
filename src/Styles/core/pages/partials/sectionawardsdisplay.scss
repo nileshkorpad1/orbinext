@@ -1,0 +1,62 @@
+section {
+	&.section-awards-recognition {
+		background-color: theme-color('primary');
+
+		&:before {
+			background-color: darken(theme-color('primary'), 8);
+		}
+		.awards-list {
+			.card-columns {
+				column-count: 2;
+				@include media-breakpoint-down(sm) {
+					column-count: 1;
+				}
+				.card {
+					border-radius: 7px;
+					.profile-img {
+						img {
+							width: 100%;
+						}
+					}
+				}
+			}
+		}
+		.recognition-list {
+			.card-columns {
+				column-count: 1;
+				.card {
+					display: block;
+					padding: 1rem 0.5rem;
+					.profile-img {
+						display: inline-block;
+						img {
+							width: 12rem;
+						}
+					}
+					.stars-rating {
+						//  @include fluid-type($min_width, $max_width, ($small_ratio * 1.5) * $min_font, ($large_ratio * 0.3) * $max_font);
+						display: inline-block;
+						.stars {
+							font-size: ($small_ratio * 1.2) * 1rem;
+							@include fluid-type($min_width, $max_width, ($small_ratio * 1.2) * $min_font, ($large_ratio * 0.5) * $max_font);
+							color: $radiant-yellow-light;
+						}
+						.rating {
+							display: inline-block;
+							.count {
+								font-size: ($large_ratio * 2) * 1rem;
+								@include fluid-type($min_width, $max_width, ($small_ratio * 2) * $min_font, ($large_ratio * 1) * $max_font);
+								font-weight: 400;
+							}
+							.total {
+								font-size: ($small_ratio * 1) * 1rem;
+								@include fluid-type($min_width, $max_width, ($small_ratio * 1) * $min_font, ($large_ratio * 0.3) * $max_font);
+								font-weight: 700;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

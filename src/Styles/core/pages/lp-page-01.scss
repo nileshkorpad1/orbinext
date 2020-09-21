@@ -1,0 +1,747 @@
+@import '../../index.scss';
+
+.section {
+	/* ************* COMMON CSS ******************** */
+	&.section-lp {
+		.section-inner-wrapper {
+			.section-heading {
+				@include font-size(4.5rem);
+				line-height: 1;
+				.heading-contrast {
+					color: #0d1663;
+				}
+			}
+			.section-byline {
+				letter-spacing: 0;
+				@include font-size(1.78rem);
+			}
+			.figure {
+				.figure-caption {
+					@include font-size(1.69rem);
+					font-weight: bold;
+					color: inherit;
+				}
+			}
+			.secondary-panel {
+				overflow: hidden;
+				.player-wrapper {
+					position: relative;
+					padding-top: 56.25%; /* Player ratio: 100 / (1280 / 720) */
+					.react-player {
+						position: absolute;
+						top: 0;
+						left: 0;
+						z-index: 1;
+					}
+				}
+			}
+			.lp-cta {
+				padding: 4rem 0;
+				.cta-heading {
+					@include font-size(4rem);
+					letter-spacing: -0.025rem;
+					font-weight: 800;
+				}
+				.cta-subheading {
+					@include font-size(1.95rem);
+					font-weight: 700;
+					color: $grey-600;
+				}
+				.section-text {
+					text-align: center;
+					font-weight: 900;
+					@include font-size(($large_ratio * 1.6) * $max_font);
+				}
+				.text-below-btn-wrapper {
+					margin-top: 0.4rem;
+					.text-below-btn {
+						@include font-size(($large_ratio * 0.5) * $max_font);
+						margin-bottom: 0.5rem;
+					}
+				}
+
+				.btn-lp-cta {
+					@include font-size(($large_ratio * 1) * $max_font);
+					letter-spacing: -0.025rem;
+					font-weight: 700;
+					padding: 1.5rem 1.8rem;
+					border-radius: 0.6rem;
+					// min-width:500;
+				}
+				.follow-up {
+					letter-spacing: 0;
+					@include font-size(1.12rem);
+					.fa-circle {
+						margin: auto 0.5rem;
+						width: 0.5rem;
+					}
+				}
+			}
+		}
+		.text-people {
+			color: $product-people !important;
+		}
+		/* ************* Hero Section CSS ******************** */
+		&.lp-hero-section {
+			background: #080841 url('../../../assets/images/lp-aio-hero-background.svg') no-repeat fixed center !important;
+			background-size: cover;
+			&:before {
+				position: relative;
+			}
+			.lp-logo {
+				width: 17rem;
+				height: auto;
+				fill: #fff;
+				margin-bottom: 1rem;
+			}
+			.lp-hero-image-users {
+				max-width: 90%;
+			}
+			p.section-text {
+				@include font-size(2.1rem);
+				font-weight: 600;
+			}
+			.lp-cta {
+				.text-below-btn {
+					color: #5f6ff1 !important;
+					* {
+						color: #5f6ff1 !important;
+					}
+				}
+			}
+			.navbar {
+				background-color: #080841;
+			}
+		}
+
+		/* ************* What is Deskera Section CSS ******************** */
+
+		&.lp-what-is-deskera-section {
+			background: #e7eaff url('../../../assets/images/lp-aio-what-is-deskera-wave-left.svg') no-repeat fixed left;
+			&:before {
+				background: #e7eaff url('../../../assets/images/lp-aio-what-is-deskera-wave-right.svg') no-repeat fixed right;
+			}
+			.section-inner-wrapper {
+				.primary-panel {
+					.section-heading {
+						@include font-size(4.2rem);
+						letter-spacing: -0.03rem;
+					}
+					.lp-aio-features {
+						.feature-item {
+							padding: 1rem 0;
+							img {
+								width: 55px;
+								height: auto;
+								margin-right: 1rem;
+							}
+							font-size: 2rem;
+							line-height: 1.8;
+						}
+					}
+				}
+				.secondary-panel {
+					padding: 2rem;
+					.player-wrapper {
+						.react-player {
+							&:before {
+								content: '';
+								background: transparent url('../../../assets/images/lp-background-grid-square-blue-02.svg') no-repeat;
+								position: absolute;
+								min-width: 150px;
+								min-height: 150px;
+								top: -6%;
+								left: -6%;
+								z-index: -1;
+							}
+							&:after {
+								content: '';
+								background: transparent url('../../../assets/images/lp-aio-background-grid-square-orange-01.svg') no-repeat;
+								position: absolute;
+								min-width: 100px;
+								min-height: 100px;
+								bottom: -6%;
+								right: -5%;
+								z-index: -1;
+							}
+						}
+					}
+				}
+			}
+			.navbar {
+				background-color: #e7eaff;
+			}
+		}
+
+		/* ************* Testimonial Section CSS ******************** */
+
+		&.lp-testimonial {
+			.section-inner-wrapper {
+				.primary-panel {
+					.section-heading {
+						@include font-size(6.8rem);
+						line-height: 0.9;
+					}
+					.lp-rating-stars {
+					}
+				}
+			}
+		}
+
+		/* ************* Business Change Section CSS ******************** */
+
+		&.lp-business-change {
+			overflow: hidden;
+
+			background: #0d1663 url('../../../assets/images/lp-aio-abstract-circle-bg.svg') no-repeat right top;
+			.section-inner-wrapper {
+				.section-heading {
+					@include font-size(($large_ratio * 2.5) * $max_font);
+				}
+				p {
+					@include font-size(($large_ratio * 1) * $max_font);
+					font-weight: 500;
+					letter-spacing: -0.025rem;
+					strong {
+						@include font-size(($large_ratio * 1.2) * $max_font);
+						line-height: 1;
+					}
+					text-align: left;
+				}
+				.lp-section-description {
+					@include font-size(($large_ratio * 1) * $max_font);
+					font-weight: 500;
+					text-align: center;
+				}
+				.lp-cta {
+					.text-below-btn {
+						color: #5f6ff1 !important;
+						* {
+							color: #5f6ff1 !important;
+						}
+					}
+				}
+			}
+			.navbar {
+				background-color: #0d1663;
+			}
+		}
+
+		/* ************* Business Change Section CSS ******************** */
+
+		&.lp-do-with-deskera {
+			background: #e7eaff url('../../../assets/images/lp-aio-what-is-deskera-wave-left.svg') no-repeat fixed left;
+			&:before {
+				background: #e7eaff url('../../../assets/images/lp-aio-what-is-deskera-wave-right.svg') no-repeat fixed right;
+			}
+			.section-inner-wrapper {
+				.section-heading {
+					@include font-size(($large_ratio * 2) * $max_font);
+				}
+				.section-byline {
+					@include font-size(($large_ratio * 1.1) * $max_font);
+					font-weight: 800;
+					margin: 1rem 0;
+				}
+			}
+			.navbar {
+				background-color: #e7eaff;
+			}
+		}
+
+		/* ************* Dashboard Section CSS ******************** */
+
+		&.lp-aio-dashboard {
+			background: #f5f2ee;
+			&:before {
+				background: #f5f2ee;
+			}
+			.section-separator {
+				fill: #f5f2ee;
+			}
+		}
+
+		/* ************* Benefits Section CSS ******************** */
+
+		&.lp-benefits {
+			.section-inner-wrapper {
+				.section-heading {
+					@include font-size(($large_ratio * 2.5) * $max_font);
+				}
+			}
+		}
+
+		/* ************* Books Section CSS ******************** */
+
+		&.lp-books-info {
+			background: #f1f3ff;
+			&:before {
+				background: #f1f3ff;
+			}
+			.navbar {
+				background-color: #f1f3ff;
+			}
+			.section-separator {
+				fill: #f1f3ff;
+			}
+		}
+
+		/* ************* Sales Section CSS ******************** */
+
+		&.lp-sales-info {
+			background: #e7f7ee;
+			&:before {
+				background: #e7f7ee;
+			}
+			.navbar {
+				background-color: #e7f7ee;
+			}
+			.section-separator {
+				fill: #e7f7ee;
+			}
+		}
+
+		/* ************* People Section CSS ******************** */
+
+		&.lp-people-info {
+			background: #fef7f2;
+			&:before {
+				background: #fef7f2;
+			}
+			.navbar {
+				background-color: #fef7f2;
+			}
+			.section-separator {
+				fill: #fef7f2;
+			}
+		}
+
+		/* ************* Rating Section CSS ******************** */
+
+		&.lp-rating {
+			.section-inner-wrapper {
+				.section-heading {
+					@include font-size(($large_ratio * 2.5) * $max_font);
+				}
+				.section-byline {
+					@include font-size(($large_ratio * 1.3) * $max_font);
+					font-weight: 800;
+					margin: 1rem 0;
+				}
+				.award-list {
+					.section-card {
+						&.card {
+							transition: all 0.3s ease-in;
+							filter: grayscale(1);
+							.img-responsive {
+								@include media-breakpoint-up(md) {
+									height: 9rem;
+									width: auto;
+									margin: auto;
+								}
+								@include media-breakpoint-down(md) {
+									display: initial;
+								}
+							}
+							&:hover {
+								filter: grayscale(0);
+							}
+						}
+					}
+				}
+				.rating-list {
+					.section-card {
+						&.card {
+							filter: grayscale(1);
+							transition: all 0.3s ease-in;
+
+							.img-responsive {
+								@include media-breakpoint-up(md) {
+									height: 3rem;
+									width: auto;
+								}
+								@include media-breakpoint-down(md) {
+									display: initial;
+								}
+							}
+							.stars {
+								color: $grey-500 !important;
+							}
+							&:hover {
+								filter: grayscale(0);
+								.stars {
+									color: theme-color('primary') !important;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		/* ************* Features Section CSS ******************** */
+
+		&.lp-aio-features {
+			background: #f1f3ff;
+			&:before {
+				background: #f1f3ff;
+			}
+			.section-inner-wrapper {
+				.section-heading {
+					@include font-size(($large_ratio * 2.5) * $max_font);
+				}
+			}
+			.navbar {
+				background-color: #f1f3ff;
+			}
+		}
+
+		/* ************* Media Interviews Section CSS ******************** */
+
+		&.lp-aio-media-interviews {
+			.section-inner-wrapper {
+				.logo-feature-media {
+					.card-img {
+						filter: grayscale(1);
+						&:hover {
+							filter: grayscale(0);
+						}
+					}
+				}
+			}
+		}
+
+		/* ************* Compare with Others Section CSS ******************** */
+
+		&.lp-aio-compare-with-others {
+			.section-heading {
+				@include font-size(($large_ratio * 2.5) * $max_font);
+			}
+			background: #f1f3ff 0% 0% no-repeat padding-box;
+
+			&:before {
+				background: #f1f3ff 0% 0% no-repeat padding-box;
+			}
+			.fa-icon-compare {
+				@include font-size(($large_ratio * 0.8) * $max_font);
+			}
+			.table {
+				background-color: $white;
+				&.table-striped > thead > tr > th {
+					background-color: #f6f5f4;
+					vertical-align: middle;
+				}
+				&.table-striped > tbody {
+					& > tr:nth-child(odd) {
+						& > td,
+						& > th {
+							background-color: transparentize(lighten($color: #f6f5f4, $amount: 3%), $amount: 0.1);
+						}
+					}
+				}
+				&.table-striped > tbody > tr {
+					&.plan-books td,
+					&.plan-sales td,
+					&.plan-people td {
+						background-color: $white;
+						border: 0.24rem solid darken($color: #f6f5f4, $amount: 3%);
+						border-width: 0.24rem 0;
+					}
+				}
+				&.table-bordered th,
+				&.table-bordered td {
+					border: 0.08rem solid darken($color: #f6f5f4, $amount: 3%);
+				}
+				&.table-hover tbody tr:hover,
+				&.table-hover tbody tr:hover td {
+					background-color: transparentize(lighten($yellow, $amount: 33%), $amount: 0.4);
+				}
+				&.table-hover tbody tr.feature-header-row :hover,
+				&.table-hover tbody tr.feature-header-row :hover td {
+					background-color: $white;
+				}
+				tr {
+					vertical-align: middle;
+					td,
+					th {
+						vertical-align: middle;
+						text-align: center;
+						&:first-child {
+							text-align: left;
+							@include font-size(1.2rem);
+							svg {
+								width: 0.8em;
+							}
+						}
+						&:nth-child(2) {
+							width: 25%;
+							img {
+								width: 120px;
+							}
+							.fa-icon-compare {
+								@include font-size(($large_ratio * 1) * $max_font);
+							}
+						}
+						&:nth-child(3),
+						&:nth-child(4),
+						&:nth-child(5) {
+							width: 15%;
+						}
+					}
+				}
+			}
+			.navbar {
+				background-color: #f1f3ff;
+			}
+		}
+
+		/* ************* Business Software Section CSS ******************** */
+
+		&.lp-aio-business-software {
+			background: #e7eaff url('../../../assets/images/lp-aio-what-is-deskera-wave-left.svg') no-repeat fixed left;
+			&:before {
+				background: #e7eaff url('../../../assets/images/lp-aio-what-is-deskera-wave-right.svg') no-repeat fixed right;
+			}
+			.section-inner-wrapper {
+				.section-heading {
+					@include font-size(($large_ratio * 2.5) * $max_font);
+				}
+				.section-byline {
+					@include font-size(($large_ratio * 1.3) * $max_font);
+					font-weight: 800;
+					margin: 1rem 0;
+				}
+				.figure {
+					margin: 2rem 0;
+					@include media-breakpoint-down(md) {
+						margin: 1rem 0;
+					}
+				}
+				.figure-caption {
+					min-height: 5rem;
+					@include media-breakpoint-down(md) {
+						min-height: max-content;
+					}
+				}
+			}
+			.navbar {
+				background-color: #e7eaff;
+			}
+		}
+
+		/* ************* Save Money Section CSS ******************** */
+
+		&.lp-save-money {
+			background: #0d1663 url('../../../assets/images/lp-aio-abstract-circle-bg.svg') no-repeat right top;
+			.plus-icon {
+				@include font-size(($large_ratio * 2) * $max_font);
+			}
+
+			.compare-amount-wrapper {
+				background: #0c134c;
+			}
+			.wrapper {
+				width: 60%;
+				margin: 0 auto;
+			}
+			.product-feature {
+				@include font-size(($large_ratio * 0.86) * $max_font);
+			}
+			.product-price {
+				@include font-size(($large_ratio * 0.8) * $max_font);
+				.amount {
+					@include font-size(($large_ratio * 1.6) * $max_font);
+					font-weight: bold;
+				}
+			}
+
+			.lp-cta {
+				.text-below-btn {
+					color: #5f6ff1 !important;
+					* {
+						color: #5f6ff1 !important;
+					}
+				}
+			}
+
+			.split-layout {
+				display: flex;
+				flex-direction: column;
+
+				@media screen and (min-width: 30em) {
+					flex-direction: row;
+					align-items: stretch;
+				}
+			}
+
+			.split-layout__item {
+				flex: 1;
+
+				@media screen and (min-width: 30em) {
+					padding-left: 1em;
+
+					&:first-child {
+						padding: 0;
+					}
+				}
+			}
+
+			.split-layout__divider {
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+
+				@media screen and (min-width: 30em) {
+					flex-direction: column;
+				}
+			}
+
+			.split-layout__label {
+				padding: 1em;
+			}
+
+			.split-layout__rule {
+				flex: 1;
+				border-style: solid;
+				border-color: #fff;
+				border-width: 1px 0 0 0;
+
+				@media screen and (min-width: 30em) {
+					border-width: 0 1px 0 0;
+				}
+			}
+			.navbar {
+				background-color: #0d1663;
+			}
+		}
+		&.lp-product-pipeline {
+			background: #f1f3ff 0% 0% no-repeat padding-box;
+			&:before {
+				background: #f1f3ff 0% 0% no-repeat padding-box;
+			}
+			.section-inner-wrapper {
+				.section-byline {
+					margin: 1rem 0;
+				}
+			}
+			.navbar {
+				background-color: #f1f3ff;
+			}
+		}
+
+		&.lp-mobile-features {
+			.section-inner-wrapper {
+				.section-heading {
+					@include font-size(($large_ratio * 2.5) * $max_font);
+				}
+				.section-byline {
+					@include font-size(($large_ratio * 1.3) * $max_font);
+					font-weight: 800;
+					margin: 1rem 0;
+				}
+			}
+		}
+		/* ************* Move to cloud Change Section CSS ******************** */
+
+		&.lp-move-to-cloud {
+			background: #0d1663 url('../../../assets/images/lp-aio-abstract-circle-bg.svg') no-repeat right top;
+			.section-inner-wrapper {
+				.section-heading {
+					@include font-size(($large_ratio * 2.5) * $max_font);
+				}
+				.section-byline {
+					@include font-size(($large_ratio * 1.3) * $max_font);
+					font-weight: 800;
+					margin: 1rem 0;
+				}
+				.lp-cta {
+					.text-below-btn {
+						color: #5f6ff1 !important;
+						* {
+							color: #5f6ff1 !important;
+						}
+					}
+				}
+			}
+			.navbar {
+				background-color: #0d1663;
+			}
+		}
+
+		/*******************LP FAQ ***********/
+		&.lp-faq {
+			.card,
+			.card-header {
+				border: none !important;
+				box-shadow: none;
+			}
+		}
+
+		/******** LP Books Hero *************/
+		&.books-section {
+			&.hero-section {
+				.section-inner-wrapper {
+					.lp-cta {
+						.cta-subheading {
+							del {
+								color: $white;
+							}
+						}
+					}
+				}
+			}
+		}
+		/******** LP Sales Hero *************/
+		&.sales-section {
+			&.hero-section {
+				.section-inner-wrapper {
+					.lp-cta {
+						.cta-subheading {
+							del {
+								color: $white;
+							}
+						}
+					}
+				}
+			}
+		}
+		/******** LP People Hero *************/
+		&.people-section {
+			&.hero-section {
+				.section-inner-wrapper {
+					.lp-cta {
+						.cta-subheading {
+							del {
+								color: $white;
+							}
+						}
+						.cta-btn-wrapper {
+							.btn-lp-cta {
+								color: $white;
+								background-color: $dark;
+								border-color: $dark;
+							}
+						}
+					}
+				}
+			}
+		}
+		/******************* Common ***********/
+		.product-section-heading {
+			@include font-size(3.5rem);
+		}
+		.product-section-byline {
+			@include font-size(1.95rem);
+			font-weight: 700;
+			letter-spacing: -0.025rem;
+		}
+		.product-section-description {
+			@include font-size(1.55rem);
+			font-weight: 500;
+			letter-spacing: -0.054rem;
+		}
+		.product-section-image {
+			width: auto;
+		}
+	}
+}

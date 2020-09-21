@@ -6,12 +6,12 @@ import { composeWithDevTools } from "redux-devtools-extension/developmentOnly";
 // #endregion Global Imports
 
 // #region Local Imports
-import Reducers from "./Reducers";
+import rootReducer from "./Reducers";
 // #endregion Local Imports
 
 export const makeStore = (initialState: {}) => {
     return createStore(
-        Reducers,
+        rootReducer,
         initialState,
         composeWithDevTools(applyMiddleware(thunkMiddleware))
     );

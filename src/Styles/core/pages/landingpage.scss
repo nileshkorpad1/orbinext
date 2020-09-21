@@ -1,0 +1,61 @@
+@import '../../index.scss';
+
+.page-landing {
+	h2 {
+		&.section-heading {
+			font-weight: 900;
+			@include font-size(($large_ratio * 2.45) * $max_font);
+			line-height: 0.9;
+		}
+	}
+	.short-section {
+		img {
+			&.cloud-icon,
+			&.file-icon,
+			&.dollar-icon {
+				width: 70px;
+			}
+		}
+	}
+	.card-columns {
+		.section-card {
+			.section-item {
+				// height: 100%;
+				// display: flex;
+				// flex-direction: column;
+				// align-items: flex-start;
+				// justify-content: space-evenly;
+				// border: none;
+			}
+		}
+	}
+	.background-decorator {
+		position: absolute;
+		z-index: 1;
+		display: none;
+		@include media-breakpoint-down(xs) {
+			display: none;
+		}
+		&.top-left {
+			// top: -4.7rem;
+			// right: 7rem;
+			// max-width: 1.8rem;
+			// transform: rotate(90deg);
+		}
+		&.top-center {
+			// top: 0;
+		}
+		&.top-right {
+			// top: 73%;
+			// left: -4rem;
+			// z-index: 1;
+			// max-width: 11rem;
+		}
+		&.bottom-right {
+		}
+		&.bottom-center {
+		}
+		&.bottom-right {
+		}
+	}
+}

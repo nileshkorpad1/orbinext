@@ -1,0 +1,107 @@
+@include keyframes(clockwise) {
+	0% {
+		transform: rotate(0deg) translate(-165px) rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg) translate(-165px) rotate(-360deg);
+	}
+}
+
+@include keyframes(anti-clockwise) {
+	0% {
+		transform: rotate(0deg) translate(165px) rotate(0deg);
+	}
+	100% {
+		transform: rotate(-360deg) translate(165px) rotate(360deg);
+	}
+}
+
+@include keyframes(rotating) {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(-360deg);
+	}
+}
+
+@include keyframes(rotating-diagonal) {
+	0% {
+		transform: translate(-300px, 150px) rotate(0deg);
+	}
+	100% {
+		transform: translate(300px, -150px) rotate(180deg);
+	}
+}
+
+@include keyframes(fadeInUp) {
+	from {
+		opacity: 0;
+		-webkit-transform: translate3d(0, 100%, 0);
+		transform: translate3d(0, 100%, 0);
+	}
+	to {
+		opacity: 1;
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+@include keyframes(fadeIn) {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@include keyframes(fadeOutUp) {
+	from {
+		opacity: 1;
+	}
+
+	to {
+		opacity: 0;
+		-webkit-transform: translate3d(0, -100%, 0);
+		transform: translate3d(0, -100%, 0);
+	}
+}
+
+
+.animation {
+	&--clockwise {
+		@include animation(clockwise, 30s);
+	}
+
+	&--anti-clockwise {
+		@include animation(anti-clockwise, 30s);
+	}
+
+	&--rotating {
+		@include animation(rotating, 15s);
+	}
+
+	&--rotating-diagonal {
+		@include animation(rotating-diagonal, 15s, linear, infinite, alternate);
+	}
+
+	&--fadeInUp {
+		@include animation(fadeInUp, 15s, linear, infinite, alternate);
+	}
+	&--fadeOutUp {
+		@include animation(fadeOutUp, 15s, linear, infinite, alternate);
+	}
+	&--fadeIn {
+		@include animation(fadeIn, 2s, linear, 1, normal);
+	}
+	&--fadeIn-1s {
+		@include animation(fadeIn, 1s, linear, 1, normal);
+	}
+	&--fadeIn-0p5s {
+		@include animation(fadeIn, 0.5s, linear, 1, normal);
+	}
+	&--fadeIn-0p3s {
+		@include animation(fadeIn, 0.3s, linear, 1, normal);
+	}
+}

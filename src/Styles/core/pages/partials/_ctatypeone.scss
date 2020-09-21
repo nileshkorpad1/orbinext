@@ -1,0 +1,222 @@
+section {
+	&.section-cta-type-one-webtolead,
+	&.section-cta-type-three,
+	&.cta-type-three-section {
+		padding: $navbar-min-height/5 0;
+		background: theme-color('primary');
+
+		&:before {
+			background: darken(theme-color('primary'), 8);
+		}
+
+		#cta-type-one-webtolead,
+		#cta-type-three {
+			padding-top: $navbar-min-height/1.5;
+			.section-heading {
+			}
+		}
+		.primary-panel {
+			.cta-type-one-webtolead-button {
+				.btn-sign-in {
+					padding: 0.7rem 2rem;
+					font-weight: 700;
+					box-shadow: 5px 5px 20px $grey-dark-2x;
+
+					@include button-outline-variant(
+						$deep-red,
+						$color-hover: color-yiq($deep-red),
+						$active-background: $deep-red,
+						$active-border: $deep-red
+					);
+				}
+				.btn-free-trial {
+					padding: 0.7rem 2rem;
+					font-weight: 700;
+					box-shadow: 5px 5px 20px $grey-dark-2x;
+					@include button-variant(
+						$white,
+						$grey-400,
+						$hover-background: $grey-900,
+						$hover-border: $grey-900,
+						$active-background: $grey-700,
+						$active-border: $grey-700
+					);
+				}
+			}
+		}
+		.background-decorator {
+			position: absolute;
+
+			&.top-left {
+				top: 0;
+				max-width: 17rem;
+				img {
+					mix-blend-mode: multiply;
+				}
+			}
+			&.bottom-center {
+				bottom: 0;
+				left: 29vw;
+				max-width: 5.9rem;
+			}
+		}
+		.secondary-panel {
+			.parallax-outer.parallax-rocket,
+			.parallax-outer.parallax-bulb {
+				padding-left: 5vw;
+				text-align: center;
+				.cta-img-full {
+					max-width: 100%;
+					width: 40rem;
+					margin-top: 3%;
+				}
+				.cta-img-rocket,
+				.cta-img-bulb {
+					max-width: 100%;
+					width: 21.5rem;
+					@include media-breakpoint-down(md) {
+						margin: auto;
+					}
+				}
+			}
+		}
+	}
+	&.section-cta-type-two {
+		// background-color: $lotus-ardent-red;
+		// &:before {
+		// 	background-color: $lotus-ardent-red;
+		// }
+		.primary-panel {
+			.section-heading {
+				display: -ms-grid;
+				font-weight: 800;
+				line-height: 1;
+				color: $white;
+				// font-size: ($small_ratio * 43.18) * 1rem;
+				// @include fluid-type($min_width, $max_width, ($small_ratio * 3.22) * $min_font, ($large_ratio * 1.79) * $max_font);
+				@include font-size(($large_ratio * 2.5) * $max_font);
+
+				.heading-contrast {
+					color: theme-color('primary');
+				}
+			}
+			.section-leader {
+				font-size: ($small_ratio * 1) * 1rem;
+				@include fluid-type($min_width, $max_width, ($small_ratio * 1) * $min_font, ($large_ratio * 0.388) * $max_font);
+				text-transform: uppercase;
+				font-weight: 500;
+				color: $grey-400;
+				border-bottom: $grey-400 1px solid;
+			}
+			.section-secondary-text {
+				color: $grey-600;
+			}
+			@include media-breakpoint-down(md) {
+				@include make-col(12);
+			}
+		}
+		.secondary-panel {
+			.section-leader {
+				font-size: ($small_ratio * 1) * 1rem;
+				@include fluid-type($min_width, $max_width, ($small_ratio * 1) * $min_font, ($large_ratio * 0.388) * $max_font);
+				text-transform: uppercase;
+				font-weight: 500;
+				color: $grey-700;
+				border-bottom: theme-color('secondary') 1px solid;
+			}
+			.line {
+				border: theme-color('secondary') 1px solid;
+				width: 50px;
+			}
+			.section-card {
+				.card-heading {
+					font-weight: 800;
+					line-height: 1;
+					font-size: ($small_ratio * 1.833) * 1rem;
+					@include fluid-type($min_width, $max_width, ($small_ratio * 1.95) * $min_font, ($large_ratio * 0.96) * $max_font);
+				}
+				.card-description {
+					color: $grey-900;
+				}
+				.card-note {
+					font-size: 1rem;
+					color: $black;
+					font-weight: 700;
+				}
+				.cta-form {
+					.form-control,
+					button {
+						border-width: 0.2rem;
+						border-color: theme-color('secondary');
+					}
+					.input-group {
+						&:hover {
+							.form-control,
+							.input-group-text,
+							button {
+								border-color: theme-color('dark');
+							}
+							button {
+								background-color: theme-color('dark');
+							}
+						}
+						button {
+							@include button-variant(
+								theme-color('secondary'),
+								theme-color('secondary'),
+								$hover-background: theme-color('dark'),
+								$hover-border: darken(theme-color('dark'), 10%),
+								$active-background: darken(theme-color('dark'), 10%),
+								$active-border: darken(theme-color('dark'), 12.5%)
+							);
+						}
+
+						.form-control,
+						.input-group-append {
+							@include media-breakpoint-down(lg) {
+								@include make-col(12);
+								border-bottom-left-radius: 0;
+								border-bottom-right-radius: 0;
+							}
+						}
+						.input-group-append {
+							& > .btn {
+								@include media-breakpoint-down(lg) {
+									border-top-left-radius: 0;
+									border-top-right-radius: 0;
+									border-bottom-left-radius: $border-radius;
+									border-bottom-right-radius: $border-radius;
+									margin-left: 1px;
+									margin-right: -1px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	&.section-cta-type-four {
+		z-index: 1;
+
+		.section-inner-wrapper {
+			.section-leader {
+				color: $grey-900;
+				opacity: 0.5;
+				font-size: 1.4rem;
+			}
+			position: relative;
+			.btn-contact {
+				background: theme-color('secondary');
+				color: $white;
+				border: none;
+				padding: 1rem 3rem;
+				font-size: ($small_ratio * 1.1) * 1rem;
+				font-weight: 500;
+				svg {
+					margin-left: 0.3rem;
+				}
+			}
+		}
+	}
+}

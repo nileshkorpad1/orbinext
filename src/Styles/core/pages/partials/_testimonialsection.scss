@@ -1,0 +1,161 @@
+section {
+	&.testimonial-section {
+		position: relative;
+
+		.stars {
+			color: $radiant-yellow-light;
+			font-size: 1.5rem;
+		}
+		.testimonial-title {
+			span {
+				padding-bottom: (($small_ratio * 1.2) * 1rem)/2;
+				border-bottom: 1px solid theme-color('secondary');
+				color: theme-color('secondary');
+				letter-spacing: 3px;
+				font-weight: 300;
+				font-size: ($small_ratio * 1.2) * 1rem;
+				@include fluid-type($min_width, $max_width, ($small_ratio * 1.2) * $min_font, ($large_ratio * 0.48) * $max_font);
+			}
+		}
+		#testimonial {
+			position: relative;
+		}
+		#testimonial:before {
+			position: absolute;
+			top: 0;
+			z-index: 1;
+			width: 17vw;
+			height: 14vw;
+			background: url('../../../../assets/images//quote-start.svg') 0% 0% no-repeat padding-box;
+			background-size: contain;
+			content: '';
+			opacity: 0.922;
+		}
+		#testimonial:after {
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			z-index: 1;
+			width: 17vw;
+			height: 14vw;
+			background: url('../../../../assets/images//quote-end.svg') 0% 0% no-repeat padding-box;
+			background-size: contain;
+			content: '';
+			opacity: 0.822;
+		}
+		.carousel {
+			padding-bottom: 3rem;
+			.carousel-indicators {
+				bottom: 0;
+				left: 0;
+				li {
+					width: 10px;
+					height: 10px;
+					border-radius: 50%;
+					background-color: theme-color('secondary');
+				}
+			}
+			.carousel-inner {
+				font-size: ($small_ratio * 1) * 1rem;
+				@include fluid-type($min_width, $max_width, ($small_ratio * 1) * $min_font, ($large_ratio * 0.4) * $max_font);
+
+				.card-columns {
+					column-count: 2;
+					column-gap: 1.5rem;
+					@include media-breakpoint-down(md) {
+						column-count: 1;
+					}
+
+					.card {
+						padding: 1rem;
+						border-radius: 5px;
+						background: transparentize($white, 0.3) 0% 0% no-repeat padding-box;
+						opacity: 1;
+						margin-bottom: 1.5rem;
+						transition: all 0.5s;
+						z-index: 999;
+
+						.section-description,
+						.testimonial-text {
+							font-weight: 550;
+							letter-spacing: -0.02rem;
+							line-height: 1.7;
+							font-size: ($small_ratio) * 1rem;
+							@include fluid-type($min_width, $max_width, ($small_ratio) * $min_font, ($large_ratio * 0.38) * $max_font);
+						}
+					}
+				}
+			}
+			.carousel-control-prev,
+			.carousel-control-next {
+				color: $grey-800;
+				font-size: 2rem;
+				top: 0;
+				bottom: 4.5rem;
+				display: flex;
+				width: 3rem;
+			}
+			.carousel-control-prev {
+				justify-content: start;
+				left: -2%;
+			}
+			.carousel-control-next {
+				// right: 45%; skip till layer is fixed for background
+				justify-content: flex-end;
+				right: -2%;
+			}
+
+			.testimonial-list {
+				.card {
+					min-height: 21.5rem;
+					@include media-breakpoint-down(md) {
+						min-height: max-content;
+					}
+					@include media-breakpoint-up(xl) {
+						min-height: 18rem;
+					}
+				}
+			}
+			.testimonial-feature {
+				.card-columns {
+					column-count: 1;
+					height: 100%;
+					padding-bottom: 1.5rem;
+					.card {
+						height: 100%;
+						.section-description,
+						.testimonial-text {
+							letter-spacing: -0.03rem;
+							font-size: ($small_ratio * 1.1) * 1rem;
+							@include fluid-type($min_width, $max_width, ($small_ratio * 1.13) * $min_font, ($large_ratio * 0.5) * $max_font);
+						}
+						.user-profile {
+							img {
+								max-width: 40px;
+							}
+						}
+						.stars {
+							margin: 0 auto;
+						}
+					}
+				}
+			}
+		}
+		.background-decorator {
+			position: absolute;
+			&.top-left {
+				top: 2vw;
+				left: -1.5vw;
+				max-width: 17rem;
+			}
+			&.bottom-right {
+				bottom: -1vw;
+				right: 0;
+				max-width: 17rem;
+				@include media-breakpoint-down(sm) {
+					right: 0;
+				}
+			}
+		}
+	}
+}

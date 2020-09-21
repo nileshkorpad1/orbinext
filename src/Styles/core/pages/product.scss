@@ -1,0 +1,58 @@
+@import '../../index.scss';
+// common selector for all layered sections
+$section-layer-width: 40vw;
+.product-page {
+	&.books-page,
+	&.sales-page,
+	&.people-page {
+		section {
+			.primary-panel {
+				.section-description {
+					&.follow-up {
+						letter-spacing: 0;
+						font-size: ($small_ratio * 0.767) * 1rem;
+						@include fluid-type($min_width, $max_width, ($small_ratio * 0.702) * $min_font, ($large_ratio * 0.38) * $max_font);
+						.fa-circle {
+							margin: auto 0.5rem;
+							width: 0.5rem;
+						}
+					}
+				}
+				.section-cta {
+					.invalid-feedback {
+						display: none;
+					}
+				}
+			}
+			&.pricing-section {
+				&.pricing-demo-three {
+					background: $white;
+
+					&:before {
+						background: $white;
+					}
+					.divider {
+						background-color: transparent;
+					}
+					.section-inner-wrapper {
+						background: $white;
+						.plan-tab-navstrip {
+							background: $white !important;
+							&.pricing-tab {
+								background: $white !important;
+								.nav-item {
+									display: none;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@import './partials/product/herosection';
+@import './partials/product/highlightsection';
+@import './partials/product/summarysection';
+@import './partials/product/detailsection';
+@import './partials/product/overviewsection';

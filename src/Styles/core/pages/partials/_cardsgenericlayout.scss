@@ -1,0 +1,106 @@
+@import '../../../index.scss';
+section {
+	.card-generic-layout {
+		display: -ms-grid;
+		display: grid;
+		grid-auto-columns: 1fr;
+		-ms-grid-columns: 1fr 1fr;
+		grid-template-columns: 1fr 1fr;
+		-ms-grid-rows: auto auto;
+		grid-template-rows: auto auto;
+		grid-row-gap: 16px;
+		grid-column-gap: 16px;
+		@include media-breakpoint-down(sm) {
+			-ms-grid-columns: 1fr;
+			grid-template-columns: 1fr;
+		}
+		.card {
+			padding: 1.15rem;
+			.heading-group {
+				position: relative;
+				display: -webkit-box;
+				display: -webkit-flex;
+				display: -ms-flexbox;
+				display: flex;
+				-webkit-box-orient: horizontal;
+				-webkit-box-direction: normal;
+				-webkit-flex-direction: row;
+				-ms-flex-direction: row;
+				flex-direction: row;
+				-webkit-box-align: center;
+				-webkit-align-items: center;
+				-ms-flex-align: center;
+				align-items: center;
+				.image {
+					width: 32px;
+					margin-right: 7px;
+					max-width: 100%;
+					vertical-align: middle;
+				}
+				.heading {
+					line-height: 1.2;
+					font-weight: 800;
+					font-size: ($small_ratio * 1.1) * 1rem;
+					@include fluid-type($min_width, $max_width, ($small_ratio * 1) * $min_font, ($large_ratio * 0.486) * $max_font);
+					overflow: hidden;
+				}
+			}
+			.description {
+				color: #666666;
+				overflow: hidden;
+			}
+		}
+	}
+	.generic-accordion {
+		.card {
+			border: 0.08rem solid transparentize(theme-color('alternate'), 0.2);
+			.card-header {
+				border: 0.08rem solid transparentize(theme-color('alternate'), 0.2);
+				border-width: 0.08rem 0;
+				padding: 1.5rem 1rem;
+				cursor: pointer;
+				box-shadow: none;
+				display: flex;
+				font-family: $headings-font-family;
+				background-color: transparentize(theme-color('alternate'), 0.5);
+				font-weight: 700;
+				font-size: ($small_ratio * 1.1) * 1rem;
+				@include fluid-type($min_width, $max_width, ($small_ratio * 1.15) * $min_font, ($large_ratio * 0.58) * $max_font);
+				.toggle-element {
+					display: inline-block;
+					margin-left: auto;
+					height: 80%;
+					width: auto;
+					svg {
+						&.fa-plus {
+							opacity: 0.8;
+							width: 0.825rem;
+						}
+					}
+				}
+				&:hover {
+					background-color: transparentize(theme-color('alternate'), 0.2);
+					.toggle-element {
+						svg {
+							&.fa-plus {
+								opacity: 1;
+							}
+						}
+					}
+				}
+				&:first-of-type {
+					border-top-width: 0;
+				}
+				&:last-of-type {
+					border-bottom-width: 0;
+				}
+			}
+			.card-body {
+				padding: 1.25rem 1.25rem 2rem;
+				font-weight: 500;
+				font-size: ($small_ratio * 0.8) * 1rem;
+				@include fluid-type($min_width, $max_width, ($small_ratio * 0.89) * $min_font, ($large_ratio * 0.486) * $max_font);
+			}
+		}
+	}
+}

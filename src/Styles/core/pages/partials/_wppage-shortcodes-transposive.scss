@@ -1,0 +1,448 @@
+@import '../../../index.scss';
+.wp-page {
+	&.erp-page,
+	&.crm-page,
+	&.mrp-page,
+	&.pm-page,
+	&.lms-page,
+	&.hrms-page,
+	&.eleave-page,
+	&.eclaims-page,
+	&.etraining-page {
+		.section {
+			&.pagehead-block {
+				background-color: $product-erp;
+				background-image: url('../../../../assets/images/texture-deskera-transparent.svg');
+				background-position: 50%;
+				background-size: 300px;
+				background-repeat: repeat;
+				&:before {
+					background-color: transparent !important;
+				}
+				&.viewport-size {
+					min-height: 50vh;
+				}
+				.nav-section-wrapper {
+					.navbar {
+						color: $white;
+						.navbar-brand {
+							.logo {
+								fill: $white;
+							}
+						}
+						.block-greetings {
+							.text-greetings,
+							.text-sign-in {
+								color: $white;
+							}
+							.btn-outline-white {
+								@include button-outline-variant(darken($white, 1%));
+							}
+						}
+					}
+				}
+				.feature-row {
+					padding: 0 0 !important;
+					.feature-column {
+						.section-leader,
+						h2,
+						h1 {
+							color: $white;
+						}
+						.section-heading {
+							display: inline;
+						}
+					}
+				}
+			}
+			&.wp-features {
+				&:before {
+					background-color: $white;
+				}
+				.feature-row {
+					padding: 0rem 0 !important;
+				}
+				.feature-row:first-child {
+					padding: 5rem 0 !important;
+				}
+				.badge {
+					vertical-align: super;
+					font-size: ($small_ratio * 1.5) * 1rem;
+
+					@include fluid-type($min_width, $max_width, ($small_ratio * 0.8) * $min_font, ($large_ratio * 0.3) * $max_font);
+				}
+			}
+			&.hero-section {
+				.feature-row {
+					.feature-column {
+						.buy-now {
+							.et_pb_button {
+								padding: 1rem 3rem;
+								background-color: theme-color('primary');
+								color: #000;
+							}
+							.badge {
+								display: none;
+							}
+						}
+					}
+				}
+				.badge {
+					&.badge-legacy {
+						background: $white;
+						color: $dark;
+						vertical-align: top;
+						font-size: ($small_ratio * 1.5) * 1rem;
+
+						@include fluid-type($min_width, $max_width, ($small_ratio * 0.8) * $min_font, ($large_ratio * 0.3) * $max_font);
+					}
+				}
+			}
+			.card-generic-layout {
+				grid-auto-columns: 1fr;
+				-ms-grid-columns: 1fr;
+				grid-template-columns: 1fr;
+				.heading-group {
+					.heading {
+						font-size: ($small_ratio * 1.35) * 1rem;
+						@include fluid-type($min_width, $max_width, ($small_ratio * 1.35) * $min_font, ($large_ratio * 0.65) * $max_font);
+						letter-spacing: 0;
+						font-weight: 700;
+					}
+				}
+				.section-description {
+					p {
+						font-size: ($small_ratio * 1.1) * 1rem;
+						@include fluid-type($min_width, $max_width, ($small_ratio * 1.1) * $min_font, ($large_ratio * 0.45) * $max_font);
+					}
+				}
+			}
+		}
+		.gstin-preview-section {
+			.section-inner-wrapper {
+				.page-content {
+					.page-title {
+						height: 8rem;
+						overflow: hidden;
+						@include media-breakpoint-down(md) {
+							height: 4rem;
+						}
+					}
+					.page-excerpt {
+						height: 8rem;
+						overflow: hidden;
+						@include media-breakpoint-down(md) {
+							height: 6rem;
+						}
+					}
+				}
+			}
+		}
+	}
+	&.erp-page {
+		.section {
+			&.pagehead-block {
+				background-color: $product-erp;
+				.nav-section-wrapper {
+					.navbar {
+						background: $product-erp;
+						&:before {
+							background: $product-erp;
+						}
+					}
+				}
+			}
+			&.wp-features {
+				.card-details {
+					.heading-group {
+						.heading {
+							color: $product-erp;
+						}
+					}
+				}
+			}
+		}
+	}
+	&.crm-page {
+		.section {
+			&.pagehead-block {
+				background-color: $product-crm;
+				.nav-section-wrapper {
+					.navbar {
+						background: $product-crm;
+						&:before {
+							background: $product-crm;
+						}
+					}
+				}
+			}
+			&.wp-features {
+				.card-details {
+					.heading-group {
+						.heading {
+							color: $product-crm;
+						}
+					}
+				}
+			}
+		}
+	}
+	&.mrp-page {
+		.section {
+			&.pagehead-block {
+				background-color: $product-mrp;
+				.nav-section-wrapper {
+					.navbar {
+						background: $product-mrp;
+						&:before {
+							background: $product-mrp;
+						}
+					}
+				}
+			}
+			&.wp-features {
+				.card-details {
+					.heading-group {
+						.heading {
+							color: $product-mrp;
+						}
+					}
+				}
+			}
+		}
+	}
+	&.pm-page {
+		.section {
+			&.pagehead-block {
+				background-color: $product-pm;
+				.nav-section-wrapper {
+					.navbar {
+						background: $product-pm;
+						&:before {
+							background: $product-pm;
+						}
+					}
+				}
+			}
+			&.wp-features {
+				.card-details {
+					.heading-group {
+						.heading {
+							color: $product-pm;
+						}
+					}
+				}
+			}
+		}
+	}
+	&.lms-page {
+		.section {
+			&.pagehead-block {
+				background-color: $product-lms;
+				.nav-section-wrapper {
+					.navbar {
+						background: $product-lms;
+						&:before {
+							background: $product-lms;
+						}
+					}
+				}
+			}
+			&.wp-features {
+				.card-details {
+					.heading-group {
+						.heading {
+							color: $product-lms;
+						}
+					}
+				}
+			}
+		}
+	}
+	&.hrms-page {
+		.section {
+			&.pagehead-block {
+				background-color: $product-hrms;
+				.nav-section-wrapper {
+					.navbar {
+						background: $product-hrms;
+						&:before {
+							background: $product-hrms;
+						}
+					}
+				}
+			}
+			&.wp-features {
+				.card-details {
+					.heading-group {
+						.heading {
+							color: $product-hrms;
+						}
+					}
+				}
+			}
+		}
+	}
+	&.eleave-page {
+		.section {
+			&.pagehead-block {
+				background-color: $product-eleave;
+				.nav-section-wrapper {
+					.navbar {
+						background: $product-eleave;
+						&:before {
+							background: $product-eleave;
+						}
+					}
+				}
+			}
+			&.wp-features {
+				.card-details {
+					.heading-group {
+						.heading {
+							color: $product-eleave;
+						}
+					}
+				}
+			}
+		}
+	}
+	&.eclaims-page {
+		.section {
+			&.pagehead-block {
+				background-color: $product-eclaims;
+				.nav-section-wrapper {
+					.navbar {
+						background: $product-eclaims;
+						&:before {
+							background: $product-eclaims;
+						}
+					}
+				}
+			}
+			&.wp-features {
+				.card-details {
+					.heading-group {
+						.heading {
+							color: $product-eclaims;
+						}
+					}
+				}
+			}
+		}
+	}
+	&.etraining-page {
+		.section {
+			&.pagehead-block {
+				background-color: $product-etraining;
+				.nav-section-wrapper {
+					.navbar {
+						background: $product-etraining;
+						&:before {
+							background: $product-etraining;
+						}
+					}
+				}
+			}
+			&.wp-features {
+				.card-details {
+					.heading-group {
+						.heading {
+							color: $product-etraining;
+						}
+					}
+				}
+			}
+		}
+	}
+	&.secondary-page {
+		section {
+			h2 {
+				font-weight: 900;
+				font-size: ($small_ratio * 2.5) * 1rem !important;
+				@include fluid-type($min_width, $max_width, ($small_ratio * 2.5) * $min_font, ($large_ratio * 1.75) * $max_font);
+			}
+			&.pagehead-block {
+				min-height: 50vh;
+				background-color: $deep-red;
+
+				@include media-breakpoint-down(sm) {
+					padding-top: 30%;
+				}
+				&:before {
+					position: absolute;
+					width: 100%;
+					height: 100%;
+					background-color: transparent !important;
+					background-image: url('../../../../assets/images/tex.png');
+					opacity: 0.2;
+
+					mix-blend-mode: overlay;
+				}
+				.section-leader,
+				.section-heading {
+					color: $white;
+				}
+			}
+			&.wp-features {
+				&:before {
+					background-color: transparent !important;
+				}
+				.feature-row {
+					display: table;
+					padding: 2rem 0;
+				}
+				.pre-secondary-nav {
+					display: inline-table;
+				}
+				.secondary-nav {
+					display: inline-table !important;
+
+					@include media-breakpoint-down(sm) {
+						display: none;
+					}
+					&.sticky-top {
+						top: 10rem;
+					}
+					.nav-pills {
+						.nav-item {
+							.nav-link {
+								color: $grey-800;
+								text-transform: uppercase;
+								font-weight: 500;
+								&:hover {
+									color: $deep-red;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	&.wp-other-page,
+	&.secondary-page,
+	.wp-features {
+		.badge {
+			display: none !important;
+		}
+	}
+	section {
+		&:not(.hero-section):not([class*="backdrop-"]) {
+			.nav-section-wrapper {
+				.navbar {
+					background: $white;
+					.block-greetings {
+						.text-greetings,
+						.text-sign-in {
+							color: theme-color('dark');
+						}
+						.btn-outline-white {
+							@include button-outline-variant(darken(theme-color('dark'), 25%));
+						}
+					}
+				}
+			}
+		}
+	}
+}

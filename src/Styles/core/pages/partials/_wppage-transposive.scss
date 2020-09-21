@@ -1,0 +1,329 @@
+@import '../../../index.scss';
+
+.wp-page {
+	.only-mobile {
+		display: none;
+		@include media-breakpoint-down(md) {
+			display: block;
+		}
+	}
+	.only-desktop {
+		display: block;
+		@include media-breakpoint-down(md) {
+			display: none;
+		}
+	}
+	.img-fluid,
+	.img-thumbnail,
+	.wp-caption img {
+		max-width: 100%;
+		height: auto;
+	}
+
+	.text-blue {
+		color: #006fff !important;
+	}
+
+	.text-aqua {
+		color: #00a8bb;
+	}
+
+	.text-pink {
+		color: #ff55c4;
+	}
+
+	.text-orange {
+		color: $orange;
+	}
+
+	.text-indigo {
+		color: #756bfc;
+	}
+
+	.text-red {
+		color: $deep-red;
+	}
+
+	.text-purple {
+		color: #ba27ff;
+	}
+
+	.text-yellow {
+		color: $yellow;
+	}
+
+	.text-light-green {
+		color: #d1ff71;
+	}
+
+	.text-light-red {
+		color: #ff7557;
+	}
+	.content-section {
+		hr {
+			background: #dadada;
+			margin-bottom: 3rem;
+		}
+		.col-wrapper {
+			padding: 0 0.5rem;
+		}
+		img {
+			max-width: 100%;
+			height: auto;
+			vertical-align: middle;
+		}
+	}
+	.shape-1,
+	.busting {
+		background: url('../../../../assets/images/shape-back-1.svg') no-repeat center;
+		background-position: 75% center;
+		background-size: contain;
+	}
+
+	.shape-2,
+	.finance-monitor {
+		background: url('../../../../assets/images/shape-back-2.svg') no-repeat center;
+		background-position: 60% center;
+		background-size: contain;
+	}
+
+	.shape-3,
+	.multiple-teams {
+		background: url('../../../../assets/images/shape-back-3.svg') no-repeat center;
+		background-position: 25% center;
+		background-size: contain;
+	}
+
+	.features {
+		position: relative;
+	}
+
+	.features-wrap {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		margin-right: -12px;
+		margin-left: -12px;
+	}
+
+	.features-wrap:first-child {
+		margin-top: -8px;
+	}
+
+	.features-wrap:last-child {
+		margin-bottom: -8px;
+	}
+
+	.feature {
+		flex-grow: 1;
+		padding: 8px 12px;
+		max-width: 344px;
+		width: 368px;
+	}
+
+	.feature-inner {
+		height: 100%;
+	}
+
+	.feature-icon {
+		position: relative;
+		display: flex;
+		justify-content: center;
+	}
+
+	.feature-title {
+		margin-top: 20px;
+		font-weight: 600;
+		font-size: 24px;
+		line-height: 34px;
+	}
+	.item__meta {
+		position: absolute;
+		top: 0;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		height: 100%;
+	}
+	.appstore {
+		float: left;
+		max-width: 30%;
+	}
+	.app-icon-group {
+		width: 60%;
+	}
+	svg {
+		.item__svg {
+			position: relative;
+			display: block;
+			float: right;
+			min-height: 500px;
+			width: 90%;
+			height: auto;
+		}
+	}
+	.bg-jade,
+	.bg-redx,
+	.bg-purplex {
+		background: url('../../../../assets/images/vector-bg.svg') no-repeat center;
+		background-position: -15% 100% !important;
+		background-size: 90% !important;
+		padding: 15% 20% 10% 15%;
+		border-radius: 2rem;
+		.text-white {
+			font-size: ($small_ratio * 1.5) * 1rem;
+			@include fluid-type($min_width, $max_width, ($small_ratio * 1.54) * $min_font, ($large_ratio * 0.88) * $max_font);
+		}
+		.android-red-video,
+		.red-video,
+		.ios-red-video {
+			position: absolute;
+			right: -10%;
+			top: 0%;
+			@include media-breakpoint-down(md) {
+				display: none;
+			}
+		}
+	}
+	.bg-jade,
+	.bg-purplex {
+		background-color: #11ddc5;
+		padding: 10% 35% 10% 10%;
+		.android-red-video,
+		.ios-red-video {
+			top: 20%;
+		}
+	}
+	.bg-redx {
+		background-color: #ff2f52;
+	}
+	.form-card {
+		#dlp-signup-form {
+			border-radius: 9px;
+			background-color: #fff;
+			box-shadow: 0 1px 9px 0 #cad3e6;
+			padding: 20px 20px;
+			text-align: center;
+			.form-header {
+				p:first-child {
+					font-size: 32px;
+					font-weight: 600;
+					line-height: 1.2;
+					margin: 0;
+					font-family: neue-haas-grotesk-display, sans-serif;
+					span {
+						font-weight: 900 !important;
+						font-family: neue-haas-grotesk-display, sans-serif;
+						color: #eb1a3c;
+					}
+				}
+			}
+			.form-control {
+				font-size: 14px;
+				border: 1px solid #dde3ec !important;
+				border-radius: 2px !important;
+				background-color: #fff !important;
+				padding: 2rem 1rem !important;
+				width: 100% !important;
+			}
+			label {
+				margin-bottom: 5px;
+				margin-left: 1px;
+				font-weight: 700;
+			}
+
+			.button-primary {
+				font-size: 20px;
+				font-weight: 700;
+				color: #fff !important;
+				background: #006fff !important;
+				transition: background 0.15s ease;
+			}
+		}
+	}
+
+	// SCSS for Generic WP Import Pages
+	.sidebar-box {
+		z-index: -1;
+		padding: 2rem;
+		background: $product-erp;
+		color: $white;
+		margin: 2rem;
+		h2 {
+			color: $white;
+		}
+	}
+	@include media-breakpoint-down(md) {
+		.features-wrap:first-child {
+			margin-top: -32px;
+		}
+
+		.features-wrap:last-child {
+			margin-bottom: -32px;
+		}
+
+		.feature {
+			padding: 32px 1.7rem;
+		}
+
+		.feature-title {
+			margin-top: 16px;
+		}
+	}
+	.product {
+		&-erp {
+			color: $product-erp;
+			&-backdrop {
+				background: $product-erp;
+			}
+		}
+		&-crm {
+			color: $product-crm;
+			&-backdrop {
+				background: $product-crm;
+			}
+		}
+		&-mrp {
+			color: $product-mrp;
+			&-backdrop {
+				background: $product-mrp;
+			}
+		}
+		&-pm {
+			color: $product-pm;
+			&-backdrop {
+				background: $product-pm;
+			}
+		}
+		&-lms {
+			color: $product-lms;
+			&-backdrop {
+				background: $product-lms;
+			}
+		}
+		&-hrms {
+			color: $product-hrms;
+			&-backdrop {
+				background: $product-hrms;
+			}
+		}
+		&-eleave {
+			color: $product-eleave;
+			&-backdrop {
+				background: $product-eleave;
+			}
+		}
+		&-eclaims {
+			color: $product-eclaims;
+			&-backdrop {
+				background: $product-eclaims;
+			}
+		}
+		&-etraining {
+			color: $product-etraining;
+			&-backdrop {
+				background: $product-etraining;
+			}
+		}
+	}
+}

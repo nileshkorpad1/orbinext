@@ -1,0 +1,93 @@
+html,
+body {
+	// @include fluid-type($min_width, $max_width, $min_font, $max_font);
+	height: initial;
+	overflow-x: initial;
+	overflow-y: initial;
+	position: relative;
+	// touch-action: manipulation;
+	font-size: ($small_ratio) * 1rem;
+
+	@include fluid-type($min_width, $max_width, ($small_ratio) * $min_font, ($large_ratio/1.5) * $min_font);
+}
+
+// body,
+// html {
+// 	// font-size: 1.01vw;
+// 	font-size: 0.85vw;
+// }
+body {
+	background-color: theme-color('light');
+	&.home {
+		background-color: theme-color('primary');
+	}
+}
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	clear: both;
+	color: $black;
+	font-weight: $headings-font-weight;
+	font-family: $headings-font-family;
+}
+
+h1 {
+	font-size: $small_ratio * $small_ratio * $small_ratio * $small_ratio * 1rem;
+
+	@include fluid-type(
+		$min_width,
+		$max_width,
+		$small_ratio * $small_ratio * $small_ratio * $small_ratio * $min_font,
+		$large_ratio * $large_ratio * $large_ratio * $large_ratio * $min_font
+	);
+}
+h2 {
+	font-size: $small_ratio * $small_ratio * $small_ratio * 1rem;
+
+	@include fluid-type(
+		$min_width,
+		$max_width,
+		$small_ratio * $small_ratio * $small_ratio * $min_font,
+		$large_ratio * $large_ratio * $large_ratio * $min_font
+	);
+}
+h3 {
+	font-size: $small_ratio * $small_ratio * 1rem;
+
+	@include fluid-type($min_width, $max_width, $small_ratio * $small_ratio * $min_font, $large_ratio * $large_ratio * $min_font);
+}
+a {
+	&:link {
+		color: $deep-red;
+	}
+	&:visited {
+		color: $dark-wine-red;
+	}
+	&:hover {
+		color: darken($deep-red, 10%);
+	}
+	&:active {
+		color: $grey-dark-2x;
+	}
+	&.btn{
+		color: $beluga-dark-5x;
+	}
+}
+p {
+	font-weight: 500;
+}
+p,
+.btn {
+	letter-spacing: -0.02rem;
+	font-size: ($small_ratio * 1.1) * 1rem;
+	@include fluid-type($min_width, $max_width, ($small_ratio * 1.13) * $min_font, ($large_ratio * 0.468) * $max_font);
+}
