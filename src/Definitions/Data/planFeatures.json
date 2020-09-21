@@ -1,0 +1,118 @@
+{
+	"description": {
+		"all-in-one": {
+			"Startup": "The perfect choice for your new business. Extremely simple to use & get started with. Setup integrated Accounting, CRM and Payroll in minutes.",
+			"Essential": "The most popular choice for SMBs and growing companies. Suitable for growing businesses that do more and need more.",
+			"Professional": "The ideal choice for companies that need advanced features and custom reporting with powerful, off-the-shelf tools."
+		},
+		"books": {
+			"Startup": "Ideal for startups. Send invoices, track bills and expenses, and generate financial statements. No knowledge of accounting needed.",
+			"Essential": "Ideal for growing businesses and SMBs. Send more invoices, fulfill more orders, track more inventory. Do more with Deskera Books!",
+			"Professional": "A powerful solution for advanced users! Setup Bill of Materials to track manufacturing costs. Use custom fields to track data and create reports."
+		},
+		"sales": {
+			"Startup": "Ideal for startups. Add contacts, close deals, and build sales pipelines. All email conversations in one place. With inbuilt email marketing templates.",
+			"Essential": "Ideal for growing businesses and SMBs. Get the power of custom fields. Tag your contacts and deals with custom attributes for better reporting.",
+			"Professional": "For email marketing at scale. The Professional plan allows you to expand your contact list and the number of emails sent exponentially!"
+		},
+		"people": {
+			"Startup": "Ideal for startups. Automate payroll processing with Deskera People. Set up pay schedule, invite employees, and run payroll and send e-Payslips.",
+			"Essential": "Ideal for growing businesses and SMBs. Run payroll for more employees. Setup your leave rules. Get better visibility into leaves and attendance.",
+			"Professional": "Run payroll, track leave & attendance, and integrated expense reporting. Add up to 100 employees. Setup leave and expense reporting."
+		}
+	},
+	"features": {
+		"all-in-one": {
+			"Startup": [
+				"Only Pay for Power Users",
+				"Add Team-mates and Employees for FREE",
+				"Free Guest Users",
+				"Up to 30 Invoices & Bills/month",
+				"Up to 1000 contacts in CRM",
+				"Payroll for up to 15 employees"
+			],
+			"Essential": [
+				"Only Pay for Power Users",
+				"Add Team-mates and Employees for FREE",
+				"Free Guest Users",
+				"Unlimited Invoices and Bills",
+				"Multi Currency",
+				"Custom Fields in CRM",
+				"Payroll for up to 30 employees"
+			],
+			"Professional": [
+				"Only Pay for Power Users",
+				"Add Team-mates and Employees for FREE",
+				"Complete Accounting",
+				"Complete Inventory",
+				"Complete CRM",
+				"Payroll for up to 100 employees"
+			]
+		},
+		"books": {
+			"Startup": [
+				"Only Pay for Power Users",
+				"Add Team-mates and Employees for FREE",
+				"Up to 30 Invoices & Bills/month",
+				"Reconcile 25 Bank Transactions",
+				"Get Paid Faster with Stripe"
+			],
+			"Essential": [
+				"Only Pay for Power Users",
+				"Add Team-mates and Employees for FREE",
+				"Everything in Startup",
+				"Unlimited Transactions",
+				"Dropship and Backorders",
+				"Multi Currency"
+			],
+			"Professional": [
+				"Only Pay for Power Users",
+				"Add Team-mates and Employees for FREE",
+				"Everything in Essential",
+				"Complete Accounting & Inventory",
+				"Custom Fields & Attributes",
+				"Pick-Pack-Ship"
+			]
+		},
+		"sales": {
+			"Startup": [
+				"Only Pay for Power Users",
+				"Add Team-mates and Employees for FREE",
+				"Up to 1000 Contacts",
+				"Deals & Contacts",
+				"Sales Pipeline",
+				"Email Marketing"
+			],
+			"Essential": [
+				"Only Pay for Power Users",
+				"Add Team-mates and Employees for FREE",
+				"Everything in Startup",
+				"Custom Fields and Attributes"
+			],
+			"Professional": ["Only Pay for Power Users", "Add Team-mates and Employees for FREE", "Everything in Essential", "Custom Re-branding"]
+		},
+		"people": {
+			"Startup": [
+				"Only Pay for Power Users",
+				"Add Team-mates and Employees for FREE",
+				"Up to 15 Employees",
+				"Process Payroll",
+				"Standard Payslip"
+			],
+			"Essential": [
+				"Only Pay for Power Users",
+				"Add Team-mates and Employees for FREE",
+				"Up to 30 Employees",
+				"Everything in Startup",
+				"Leave Management"
+			],
+			"Professional": [
+				"Only Pay for Power Users",
+				"Add Team-mates and Employees for FREE",
+				"Up to 100 Employees",
+				"Everything in Essential",
+				"Expense Reporting"
+			]
+		}
+	}
+}

@@ -3,6 +3,7 @@
   "plugins": [
     [
       "module-resolver",
+
       {
         "root": ["./"],
         "alias": {
@@ -19,6 +20,9 @@
           "@Styled": "./src/Styled"
         }
       }
+    ],
+    [
+      "inline-svg"
     ],
     [
       "babel-plugin-styled-components",

@@ -1,0 +1,51 @@
+section {
+	&.sales-section {
+		&.hero-section {
+			&.background-wave {
+				background: $product-sales url('/static/images/wave-sales.svg') no-repeat center;
+				background-size: cover;
+			}
+		}
+		margin: 0;
+		overflow: hidden;
+		// min-height: 100vh;
+		.divider {
+			padding: $navbar-min-height/1.1 0;
+		}
+		.section-inner-wrapper {
+			.btn-readmore {
+				padding-left: 0;
+			}
+
+			.secondary-panel {
+				.parallax-outer {
+					&.parallax-takeout {
+						&.takeout-one {
+							top: 75%;
+							left: 25%;
+							img.takeout-one {
+								width: 21rem;
+							}
+						}
+						&.takeout-two {
+							top: -10%;
+							left: 30%;
+							img.takeout-two {
+								width: 20rem;
+								max-width: 60%;
+							}
+						}
+					}
+					&.parallax-annotation {
+						top: 45%;
+						right: -5%;
+						.img-annotation {
+							width: 15rem;
+							max-width: 100%;
+						}
+					}
+				}
+			}
+		}
+	}
+}

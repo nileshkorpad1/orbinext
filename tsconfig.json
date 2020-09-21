@@ -30,6 +30,8 @@
       "@Server/*": ["server/*"],
       "@Services": ["src/Services"],
       "@Services/*": ["src/Services/*"],
+      "@Helpers": ["src/Helpers"],
+      "@Helpers/*": ["src/Helpers/*"],
       "@Static/*": ["public/static/*"],
       "@Styled/*": ["src/Styled/*"],
       "@Styles/*": ["src/Styles/*"],

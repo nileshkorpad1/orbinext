@@ -11,37 +11,35 @@ function preRegisterUserDetails() {
     return { type: userConstants.REGISTER_USER_DETAILS, preUserDetails };
 }
 
-function login(username, password) {
-
-
-    function request(user) {
+function login(username: string, password: string) {
+    function request(user: any) {
         return { type: userConstants.LOGIN_REQUEST, user };
     }
-    function success(user) {
+    function success(user: any) {
         return { type: userConstants.LOGIN_SUCCESS, user };
     }
-    function failure(error) {
+    function failure(error: any) {
         return { type: userConstants.LOGIN_FAILURE, error };
     }
-    function getAuthenticatedUser(userToken) {
+    function getAuthenticatedUser(userToken: any) {
         const user = userService.getUser(userToken);
         return { type: userConstants.GET_USER, user };
     }
 
-     return (dispatch: any) => {
-         dispatch(request({ username }));
+    return (dispatch: any) => {
+        dispatch(request({ username }));
 
-         userService.login(username, password).then(
-             user => {
-                 dispatch(success(user));
-                 dispatch(getAuthenticatedUser(user));
-             },
-             error => {
-                 dispatch(failure(error.toString()));
-                 dispatch(alertActions.error(error.toString()));
-             }
-         );
-     };
+        userService.login(username, password).then(
+            user => {
+                dispatch(success(user));
+                dispatch(getAuthenticatedUser(user));
+            },
+            error => {
+                dispatch(failure(error.toString()));
+                dispatch(alertActions.error(error.toString()));
+            }
+        );
+    };
 }
 
 function getUserSubscription() {
@@ -149,16 +147,18 @@ function resendVerificationEmail(user) {
     function request() {
         return { type: userConstants.RESEND_VERIFICATION_EMAIL_REQUEST };
     }
-    function success(user) {
+    // eslint-disable-next-line no-shadow
+    function success(user: any) {
         return { type: userConstants.RESEND_VERIFICATION_EMAIL_SUCCESS, user };
     }
-    function failure(error) {
+    function failure(error: any) {
         return { type: userConstants.RESEND_VERIFICATION_EMAIL_FAILURE, error };
     }
 
     return (dispatch: any) => {
         dispatch(request());
         userService.resendVerificationEmail(user).then(
+            // eslint-disable-next-line no-shadow
             user => {
                 dispatch(success(user));
             },
@@ -174,10 +174,11 @@ function resetPassword(user) {
     function request() {
         return { type: userConstants.RESET_PASSWORD_REQUEST };
     }
-    function success(user) {
+    // eslint-disable-next-line no-shadow
+    function success(user: any) {
         return { type: userConstants.RESET_PASSWORD_SUCCESS, user };
     }
-    function failure(error) {
+    function failure(error: any) {
         return { type: userConstants.RESET_PASSWORD_FAILURE, error };
     }
     return (dispatch: any) => {
@@ -201,7 +202,7 @@ function getAuthenticatedStatus() {
     function request() {
         return { type: userConstants.GET_LOGIN_STATUS };
     }
-    function success(user) {
+    function success(user: any) {
         return { type: userConstants.LOGIN_STATUS_SUCCESS, user };
     }
     // function emailNotVerified() {
@@ -254,13 +255,13 @@ function ShowCountryDialog() {
 function HideCountryDialog() {
     return { type: userConstants.DEFAULT_COUNTRY_DIALOG_CLOSE };
 }
-function HideMenuDropDown(Dropdown?) {
+function HideMenuDropDown(Dropdown?: any) {
     if (Dropdown === "pricing") {
         return { type: CONSTANT.HIDE_PRICING_DROPDOWN };
     }
     return { type: CONSTANT.HIDE_MENU_DROPDOWN };
 }
-function ShowMenuDropDown(Dropdown?) {
+function ShowMenuDropDown(Dropdown?: any) {
     if (Dropdown === "pricing") {
         return { type: CONSTANT.SHOW_PRICING_DROPDOWN };
     }

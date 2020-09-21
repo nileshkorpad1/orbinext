@@ -1,0 +1,75 @@
+{
+	"common": {
+		"start_trial": "Start Trial",
+		"get_stated_now": "Get started now!",
+		"sign_in_now": "Sign in now",
+		"try_it_first": "Try it first",
+		"start_trial_30_days": "Start your 30 day Free Trial",
+		"deskera_suite": "The Deskera Suite.",
+		"cta": {
+			"section-heading": "Accounting, <br>Payroll, CRM & more.",
+			"heading-contrast": "Semua bisnis Anda pada platform All-in-One",
+			"leader": "GET STARTED",
+			"heading": "Gratis coba selama <br>30 hari, tanpa persyaratan!",
+			"description": "Mulai dengan satu aplikasi dari tiga kegunaan, pilih metode yang sesuai dengan bisnis Anda",
+			"buttonTittle": "Try it First",
+			"inputPlaceholder": "Enter email for free trial",
+			"no_credit_card_required": "No Credit Card Required"
+		},
+		"webtoLead": {
+			"title": "Run Your Business With Deskera",
+			"title-books": "Accounting Made Simple",
+			"description": "Why use 3 different SaaS tools, when Deskera can provide all 3 use-cases through a single software?",
+			"description-books": "Deskera makes the process of managing your books as easy as 1-2-3."
+		},
+		"testimonial": {
+			"section-leader": "Jangan hanya mempercayai perkataan kita.",
+			"section-heading": "Konsumen menyukai Deskera!"
+		}
+	},
+
+	"home": {
+		"heroSection": {
+			"title": "Jalankan Bisnis Anda.",
+			"tagline": "Applikasi yang bekerja untuk Anda.",
+			"byline": "Deskera merupakan platform terintegrasi yang memperkuat bisnis anda dengan modul yang dapat dipilih.",
+			"bylineAug": "Accounting, Payroll, CRM & more for all your business needs",
+			"bylineLink": "Pada 2020, lebih dari 300 ribu pengguna dari 38 negara sudah menggunakan Deskera"
+		},
+		"pricingSection": {
+			"leader": "Fleksibel sesuai dengan kebutuhan perusahaanmu.",
+			"byline": "30 Days Free Trial. Select a plan that best suits your business",
+			"heading": "Paket yang sesuai untuk bisnis Anda.",
+			"text_save_more": "Buy yearly and get 20% off on any plan"
+		},
+		"keyFeaturesSection": {
+			"books": {
+				"description": "Mengurus invoice dan stok barang Anda. Lengkap dengan dashboard dan laporan yang bisa di custom untuk akuntansi dan keuanganmu. Anda bisa mengambil keputusan yang tepat dengan data tersebut.",
+				"linkText": "Boost your business with Books"
+			},
+			"sales": {
+				"description": "Atur lebih baik prospek, konsumen dan relasi kepada vendor. Sudah terintegrasi dengan Deskera Books, data kontak sudah terhubung untuk memaksimalkan kesempatan yang ada dalam tim Anda.",
+				"linkText": "Strengthen your relationships with CRM"
+			},
+			"people": {
+				"description": "Solusi Payroll, Manajemen Karyawan lebih mudah. Habiskan waktu lebih untuk karyawan, bukan pekerjaan administrasi yang ada.",
+				"linkText": "Provide more to your employees with People"
+			}
+		},
+		"booksSection": {
+			"heading": "Pembaharuan Akuntansi.",
+			"byline": "Mulai dari penawaran sampai ke pembayaran. Semua dengan tampilan yang mudah. Dengan sistem bisnis proses yang sederhana. Semua data bisnis berada di tangan Anda.",
+			"linkText": "Accounting with Deskera Books"
+		},
+		"salesSection": {
+			"heading": "Tingkatkan Penjualan Anda.",
+			"byline": "Deskera CRM membantu optimalisasi jadwal kunjungan harian tim Anda. Membantu prioritas tugas dalam tim untuk memastikan prospek Anda dapat menjadi konsumen Anda.",
+			"linkText": "Customer Management with Deskera CRM"
+		},
+		"peopleSection": {
+			"heading": "Memperhatikan karyawan Anda",
+			"byline": "Bisnis yang hebat tidak bisa diperlambat oleh pekerjaan administrasi yang memakan waktu. Deskera People melakukan administrasi untuk sistem payroll, pengeluaran dan cuti.",
+			"linkText": "Resource Management with Deskera People"
+		}
+	}
+}

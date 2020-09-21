@@ -2,13 +2,6 @@
 import { pricingConstants } from "@Definitions/ActionConsts";
 import { planService } from "@Services";
 
-export const planActions = {
-    // productPlansDetails,
-    userPlanStatus,
-    getProductPlans,
-    getCampaignPlan,
-};
-
 // function productPlansDetails(productName) {
 // 	let productPlansData = planService.productPlansDetails();
 // 	return productPlansData;
@@ -73,3 +66,9 @@ function getCampaignPlan(pid: any) {
         return { type: pricingConstants.GET_CAMPAIGN_PRICING_FAILURE, error };
     }
 }
+export const planActions = {
+    // productPlansDetails,
+    userPlanStatus,
+    getProductPlans,
+    getCampaignPlan,
+};

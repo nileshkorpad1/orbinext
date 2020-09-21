@@ -1,7 +1,74 @@
 {
-  "Hello": "Hello",
-  "World": "World",
-  "Error": "Errr!",
-  "NotFound": "Page not found!",
-  "BackHome": "Back to home"
+	"common": {
+		"start_trial": "Start Trial",
+		"sign_in_now": "Sign in now",
+		"get_stated_now": "Get started now!",
+		"try_it_first": "Try it first",
+		"start_trial_30_days": "Start your 30 day Free Trial",
+		"cta": {
+			"section-heading": "Accounting, <br>Payroll, CRM & more.",
+			"heading-contrast": "Manage your entire business with our all-in-one platform.",
+			"leader": "GET STARTED",
+			"heading": "Start with a 30 day<br/>'No Questions Asked' Free Trial!",
+			"description": "Start with one application or all the three<br/>choose the plan that fits your business",
+			"buttonTittle": "Try it First",
+			"inputPlaceholder": "Enter email for free trial",
+			"no_credit_card_required": "No Credit Card Required"
+		},
+		"webtoLead": {
+			"title": "Run Your Business With Deskera",
+			"title-books": "Accounting Made Simple",
+			"description": "Why use 3 different SaaS tools, when Deskera can provide all 3 use-cases through a single software?",
+			"description-books": "Deskera makes the process of managing your books as easy as 1-2-3."
+		},
+		"testimonial": {
+			"section-leader": "Don’t just take our word for it.",
+			"section-heading": "Customers love Deskera!"
+		}
+	},
+
+	"home": {
+		"heroSection": {
+			"title": "Run Your Business.",
+			"tagline": "Apps that works for you.",
+			"byline": "Deskera is an integrated platform that powers your business with core building blocks.",
+			"bylineAug": "Accounting, Payroll, CRM & more for all your business needs",
+			"bylineLink": "In 2020, 300, 000 + users from 38 countries have signed up on Deskera"
+		},
+		"pricingSection": {
+			"leader": "Flexible to your organization's needs.",
+			"byline": "30 Days Free Trial. Select a plan that best suits your business",
+			"heading": "All-in-One Tool For Your Business.",
+			"text_save_more": "Buy yearly and get 20% off on any plan"
+		},
+		"keyFeaturesSection": {
+			"books": {
+				"description": "Take care of your invoices and inventory. Dedicated dashboard for customizable reports, accounting, and finance. All the data you need in one place to make the right business decisions.",
+				"linkText": "Boost your business with Books"
+			},
+			"sales": {
+				"description": "Proactively manage your prospect, customer and vendor relationships. Natively integrated with Deskera Books, add a contact and it’s easy for you and your team to make the most of the opportunity.",
+				"linkText": "Strengthen your relationships with CRM"
+			},
+			"people": {
+				"description": "Make payroll, expenses and leave management a breeze for your organization. Spend more time on your most important asset - your people, and cut out all the administrative work that comes with it!",
+				"linkText": "Provide more to your employees with People"
+			}
+		},
+		"booksSection": {
+			"heading": "Accounting reimagined.",
+			"byline": "Starting from quotation, and ending with the payment - Deskera Books makes managing your accounting a breeze.",
+			"linkText": "Accounting with Deskera Books"
+		},
+		"salesSection": {
+			"heading": "Growth reassured.",
+			"byline": "Manage all your customer relations in one place. Super-charge your sales team with a CRM that's both simple to use & jam-packed with features at the same time!",
+			"linkText": "Customer Management with Deskera CRM"
+		},
+		"peopleSection": {
+			"heading": "Employees cared for.",
+			"byline": "Great businesses can’t be weighed down by time-consuming administration work. Let People administer your payroll, leave and expense management.",
+			"linkText": "Resource Management with Deskera People"
+		}
+	}
 }

@@ -1,0 +1,226 @@
+{
+	"books": {
+		"features": [
+			{
+				"Name": "Mobile App",
+				"IsGroup": false,
+				"Items": [],
+				"Values": ["", "", ""]
+			},
+			{
+				"Name": "Accounting",
+				"IsGroup": true,
+				"Items": ["Products", "Invoices", "Bills & Expenses", "Quotes", "POs", "Online Collection & Payments"],
+				"Values": [
+					["", "", ""],
+					["Up to 30", "Unlimited", "Unlimited"],
+					["Up to 30", "Unlimited", "Unlimited"],
+					["", "", ""],
+					["", "", ""],
+					["", "", ""]
+				]
+			},
+			{
+				"Name": "Contacts (Customers & Suppliers)",
+				"IsGroup": false,
+				"Items": [],
+				"Values": ["", "", ""]
+			},
+			{
+				"Name": "Bank",
+				"IsGroup": true,
+				"Items": ["Connect Your Bank", "Bank Reconciliation Transactions"],
+				"Values": [
+					["", "", ""],
+					["Up to 25", "Unlimited", "Unlimited"]
+				]
+			},
+			{
+				"Name": "Reports",
+				"IsGroup": true,
+				"Items": ["Sales Tax Report", "Financial Reports", "Business Reports"],
+				"Values": [
+					["", "", ""],
+					["", "", ""],
+					["", "", ""]
+				]
+			},
+			{
+				"Name": "Local Compliance",
+				"IsGroup": true,
+				"Items": ["SG", "US", "INDIA", "INDONESIA", "MALAYSIA", "PHILIPPINES"],
+				"Values": [
+					["", "", ""],
+					["", "", ""],
+					["", "", ""],
+					["", "", ""],
+					["", "", ""],
+					["", "", ""]
+				]
+			},
+			{
+				"Name": "Support",
+				"IsGroup": true,
+				"Items": ["Email", "Chat"],
+				"Values": [
+					["", "", ""],
+					["", "", ""]
+				]
+			},
+			{
+				"Name": "Helpsite/Guide",
+				"IsGroup": false,
+				"Items": [],
+				"Values": ["", "", ""]
+			},
+			{
+				"Name": "Product",
+				"IsGroup": true,
+				"Items": ["Inventory Management", "DropShip", "Back Orders", "Pick/Pack/Ship", "Bill of Materials"],
+				"Values": [
+					["-", "", ""],
+					["-", "", ""],
+					["-", "", ""],
+					["-", "-", ""],
+					["-", "-", ""]
+				]
+			},
+			{
+				"Name": "Document Designer",
+				"IsGroup": false,
+				"Items": [],
+				"Values": ["-", "", ""]
+			},
+			{
+				"Name": "Multi+",
+				"IsGroup": true,
+				"Items": ["Multi Currency", "Multi Warehouse"],
+				"Values": [
+					["-", "", ""],
+					["-", "-", ""]
+				]
+			},
+			{
+				"Name": "Custom",
+				"IsGroup": true,
+				"Items": ["Custom Fields & Dimensions"],
+				"Values": [["-", "-", ""]]
+			}
+		]
+	},
+	"sales": {
+		"features": [
+			{
+				"Name": "Contact Management",
+				"IsGroup": true,
+				"Items": ["People", "Organizations"],
+				"Values": [
+					["", "", ""],
+					["", "", ""]
+				]
+			},
+			{
+				"Name": "Pipelines",
+				"IsGroup": false,
+				"Items": [],
+				"Values": ["", "", ""]
+			},
+			{
+				"Name": "Deals",
+				"IsGroup": false,
+				"Items": [],
+				"Values": ["", "", ""]
+			},
+			{
+				"Name": "Tasks & Activities",
+				"IsGroup": false,
+				"Items": [],
+				"Values": ["", "", ""]
+			},
+			{
+				"Name": "Helpsite/Guide",
+				"IsGroup": false,
+				"Items": [],
+				"Values": ["", "", ""]
+			},
+			{
+				"Name": "Custom Fields",
+				"IsGroup": false,
+				"Items": [],
+				"Values": ["-", "", ""]
+			},
+			{
+				"Name": "Email Marketing",
+				"IsGroup": true,
+				"Items": ["Email List Segmentation", "Email Templates", "Email List Size", "Email Broadcasts"],
+				"Values": [
+					["", "", ""],
+					["", "", ""],
+					["Up to 1,000", "Up to 50,000", "Up to 100,000"],
+					["Up to 10,000 per month", "Up to 500,000 per month", "Up to 1, 000, 000 per month"]
+				]
+			}
+		]
+	},
+	"people": {
+		"features": [
+			{
+				"Name": "Add Employees for FREE",
+				"IsGroup": false,
+				"Items": [],
+				"Values": ["Up to 15", "Up to 30", "Up to 100"]
+			},
+			{
+				"Name": "Payroll",
+				"IsGroup": false,
+				"Items": [],
+				"Values": ["", "", ""]
+			},
+			{
+				"Name": "Standard Payslip",
+				"IsGroup": false,
+				"Items": [],
+				"Values": ["", "", ""]
+			},
+			{
+				"Name": "Adhoc Payrun",
+				"IsGroup": false,
+				"Items": [],
+				"Values": ["", "", ""]
+			},
+			{
+				"Name": "Employee Administration",
+				"IsGroup": false,
+				"Items": [],
+				"Values": ["", "", ""]
+			},
+			{
+				"Name": "Local Compliance",
+				"IsGroup": true,
+				"Items": ["SG", "US"],
+				"Values": [
+					["", "", ""],
+					["", "", ""]
+				]
+			},
+			{
+				"Name": "Helpsite/Guide",
+				"IsGroup": false,
+				"Items": [],
+				"Values": ["", "", ""]
+			},
+			{
+				"Name": "Leave Management",
+				"IsGroup": false,
+				"Items": [],
+				"Values": ["-", "", ""]
+			},
+			{
+				"Name": "Expenses",
+				"IsGroup": false,
+				"Items": [],
+				"Values": ["-", "-", ""]
+			}
+		]
+	}
+}

@@ -1,0 +1,54 @@
+section {
+	&.books-section {
+		&.hero-section {
+			&.background-wave {
+				background: $product-books url('/static/images/wave-books.svg') no-repeat center;
+				background-size: cover;
+			}
+		}
+		margin: 0;
+		overflow: hidden;
+		// min-height: 100vh;
+		.divider {
+			padding: $navbar-min-height/1.1 0;
+		}
+		.section-inner-wrapper {
+			.btn-readmore {
+				padding-left: 0;
+			}
+
+			.secondary-panel {
+				.parallax-outer {
+					&.parallax-takeout {
+						&.takeout-one {
+							top: 55%;
+							left: 25%;
+							img.takeout-one {
+								width: 21rem;
+								min-width: 30%;
+								max-width: 80%;
+							}
+						}
+						&.takeout-two {
+							top: -12%;
+							right: 1%;
+							img.takeout-two {
+								width: 20rem;
+								max-width: 60%;
+							}
+						}
+					}
+					&.parallax-annotation {
+						top: 25%;
+						right: -5%;
+						text-align: right;
+						.img-annotation {
+							width: 15rem;
+							max-width: 100%;
+						}
+					}
+				}
+			}
+		}
+	}
+}

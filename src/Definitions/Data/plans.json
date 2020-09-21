@@ -1,0 +1,640 @@
+{
+	"all": {
+		"MonthlyPlans": [
+			{
+				"PlanName": "Startup",
+				"PlanID": {
+					"dev": "plan_JctbQmmn",
+					"staging": "plan_9rfKlfHF",
+					"prod": "plan_9rfKlfHF"
+				},
+				"Addons": [
+					{
+						"Description": "Contact \u0026 email size",
+						"Code": "CONTACT_EMAIL_COUNT",
+						"Items": [
+							{
+								"Name": "Contact Size",
+								"Values": [1000, 2500, 5000, 10000],
+								"Code": "CONTACT_COUNT"
+							},
+							{
+								"Name": "Email Size",
+								"Values": [10000, 25000, 50000, 100000],
+								"Code": "EMAIL_SEND_COUNT"
+							},
+							{
+								"Name": "Amount",
+								"Values": [0, 30, 42, 54],
+								"Code": "ADDON_AMOUNT"
+							}
+						]
+					}
+				],
+				"Amount": 35,
+				"Currency": "usd",
+				"Active": true,
+				"TrialDays": 30,
+				"Interval": "monthly"
+			},
+			{
+				"PlanName": "Essential",
+				"PlanID": {
+					"dev": "plan_L1Ko5kjP",
+					"staging": "plan_TZ2KHL31",
+					"prod": "plan_TZ2KHL31"
+				},
+				"Addons": [
+					{
+						"Description": "Choose your contact \u0026 email size",
+						"Code": "",
+						"Items": [
+							{
+								"Name": "Contact Size",
+								"Values": [1000, 2500, 5000, 10000, 25000, 50000],
+								"Code": "CONTACT_COUNT"
+							},
+							{
+								"Name": "Email Size",
+								"Values": [10000, 25000, 50000, 100000, 250000, 500000],
+								"Code": "EMAIL_SEND_COUNT"
+							},
+							{
+								"Name": "Amount",
+								"Values": [0, 114, 120, 180, 300, 420],
+								"Code": "ADDON_AMOUNT"
+							}
+						]
+					}
+				],
+				"Amount": 58,
+				"Currency": "usd",
+				"Active": true,
+				"TrialDays": 30,
+				"Interval": "monthly"
+			},
+			{
+				"PlanName": "Professional",
+				"PlanID": {
+					"dev": "plan_AURdJ4fb",
+					"staging": "plan_OZpmmoJm",
+					"prod": "plan_OZpmmoJm"
+				},
+				"Addons": [
+					{
+						"Description": "Contact \u0026 email size",
+						"Code": "CONTACT_EMAIL_COUNT",
+						"Items": [
+							{
+								"Name": "Contact Size",
+								"Values": [1000, 2500, 5000, 10000, 25000, 50000, 100000],
+								"Code": "CONTACT_COUNT"
+							},
+							{
+								"Name": "Email Size",
+								"Values": [10000, 25000, 50000, 100000, 250000, 500000, 1000000],
+								"Code": "EMAIL_SEND_COUNT"
+							},
+							{
+								"Name": "Amount",
+								"Values": [0, 114, 120, 180, 300, 420, 660],
+								"Code": "ADDON_AMOUNT"
+							}
+						]
+					}
+				],
+				"Amount": 119,
+				"Currency": "usd",
+				"Active": true,
+				"TrialDays": 30,
+				"Interval": "monthly"
+			}
+		],
+		"YearlyPlans": [
+			{
+				"PlanName": "Startup",
+				"PlanID": {
+					"dev": "plan_UtDoZn1b",
+					"staging": "plan_THDGXCt9",
+					"prod": "plan_THDGXCt9"
+				},
+				"Addons": [
+					{
+						"Description": "Contact \u0026 email size",
+						"Code": "CONTACT_EMAIL_COUNT",
+						"Items": [
+							{
+								"Name": "Contact Size",
+								"Values": [1000, 2500, 5000, 10000],
+								"Code": "CONTACT_COUNT"
+							},
+							{
+								"Name": "Email Size",
+								"Values": [10000, 25000, 50000, 100000],
+								"Code": "EMAIL_SEND_COUNT"
+							},
+							{
+								"Name": "Amount",
+								"Values": [0, 25, 35, 45],
+								"Code": "ADDON_AMOUNT"
+							}
+						]
+					}
+				],
+				"Amount": 348,
+				"Currency": "usd",
+				"Active": true,
+				"TrialDays": 30,
+				"Interval": "yearly"
+			},
+			{
+				"PlanName": "Essential",
+				"PlanID": {
+					"dev": "plan_bWnnxgng",
+					"staging": "plan_kMYl7Hk6",
+					"prod": "plan_kMYl7Hk6"
+				},
+				"Addons": [
+					{
+						"Description": "Contact \u0026 email size",
+						"Code": "CONTACT_EMAIL_COUNT",
+						"Items": [
+							{
+								"Name": "Contact Size",
+								"Values": [1000, 2500, 5000, 10000, 25000, 50000],
+								"Code": "CONTACT_COUNT"
+							},
+							{
+								"Name": "Email Size",
+								"Values": [10000, 25000, 50000, 100000, 250000, 500000],
+								"Code": "EMAIL_SEND_COUNT"
+							},
+							{
+								"Name": "Amount",
+								"Values": [0, 95, 100, 150, 250, 350],
+								"Code": "ADDON_AMOUNT"
+							}
+						]
+					}
+				],
+				"Amount": 588,
+				"Currency": "usd",
+				"Active": true,
+				"TrialDays": 30,
+				"Interval": "yearly"
+			},
+			{
+				"PlanName": "Professional",
+				"PlanID": {
+					"dev": "plan_GxJ1qUJ7",
+					"staging": "plan_Ehw7eXge",
+					"prod": "plan_Ehw7eXge"
+				},
+				"Addons": [
+					{
+						"Description": "Contact \u0026 email size",
+						"Code": "CONTACT_EMAIL_COUNT",
+						"Items": [
+							{
+								"Name": "Contact Size",
+								"Values": [1000, 2500, 5000, 10000, 25000, 50000, 100000],
+								"Code": "CONTACT_COUNT"
+							},
+							{
+								"Name": "Email Size",
+								"Values": [10000, 25000, 50000, 100000, 250000, 500000, 1000000],
+								"Code": "EMAIL_SEND_COUNT"
+							},
+							{
+								"Name": "Amount",
+								"Values": [0, 95, 100, 150, 250, 350, 550],
+								"Code": "ADDON_AMOUNT"
+							}
+						]
+					}
+				],
+				"Amount": 1188,
+				"Currency": "usd",
+				"Active": true,
+				"TrialDays": 30,
+				"Interval": "yearly"
+			}
+		]
+	},
+	"erp": {
+		"MonthlyPlans": [
+			{
+				"PlanName": "Startup",
+				"PlanID": {
+					"dev": "plan_3OC1eoaI",
+					"staging": "plan_3BayVasb",
+					"prod": "plan_3BayVasb"
+				},
+				"Addons": [],
+				"Amount": 11,
+				"Currency": "usd",
+				"Active": true,
+				"TrialDays": 30,
+				"Interval": "monthly"
+			},
+			{
+				"PlanName": "Essential",
+				"PlanID": {
+					"dev": "plan_DoIkQayV",
+					"staging": "plan_KDzJFTy0",
+					"prod": "plan_KDzJFTy0"
+				},
+				"ProductLimits": [
+					{
+						"Code": "ERP",
+						"FreeUserCount": 1,
+						"AddonCharge": 22
+					}
+				],
+				"Addons": [],
+				"Amount": 22,
+				"Currency": "usd",
+				"Active": true,
+				"TrialDays": 30,
+				"Interval": "monthly"
+			},
+			{
+				"PlanName": "Professional",
+				"PlanID": {
+					"dev": "plan_X2iDCHZI",
+					"staging": "plan_VJ1IGjxM",
+					"prod": "plan_VJ1IGjxM"
+				},
+				"ProductLimits": [
+					{
+						"Code": "ERP",
+						"FreeUserCount": 1,
+						"AddonCharge": 45
+					}
+				],
+				"Addons": [],
+				"Amount": 45,
+				"Currency": "usd",
+				"Active": true,
+				"TrialDays": 30,
+				"Interval": "monthly"
+			}
+		],
+		"YearlyPlans": [
+			{
+				"PlanName": "Startup",
+				"PlanID": {
+					"dev": "plan_2SYUSD6B",
+					"staging": "plan_BwGeNkNv",
+					"prod": "plan_BwGeNkNv"
+				},
+				"Addons": [],
+				"Amount": 108,
+				"Currency": "usd",
+				"Active": true,
+				"TrialDays": 30,
+				"Interval": "yearly"
+			},
+			{
+				"PlanName": "Essential",
+				"PlanID": {
+					"dev": "plan_cyt191Ih",
+					"staging": "plan_L0Uu1v5Q",
+					"prod": "plan_L0Uu1v5Q"
+				},
+				"Addons": [],
+				"Amount": 228,
+				"Currency": "usd",
+				"Active": true,
+				"TrialDays": 30,
+				"Interval": "yearly"
+			},
+			{
+				"PlanName": "Professional",
+				"PlanID": {
+					"dev": "plan_WEYb7bxb",
+					"staging": "plan_ZJ3mXafQ",
+					"prod": "plan_ZJ3mXafQ"
+				},
+				"Addons": [],
+				"Amount": 468,
+				"Currency": "usd",
+				"Active": true,
+				"TrialDays": 30,
+				"Interval": "yearly"
+			}
+		]
+	},
+	"crm": {
+		"MonthlyPlans": [
+			{
+				"PlanName": "Startup",
+				"PlanID": {
+					"dev": "plan_U6mp64Xe",
+					"staging": "plan_3TLDmfaP",
+					"prod": "plan_3TLDmfaP"
+				},
+				"Addons": [
+					{
+						"Description": "Contact \u0026 email size",
+						"Code": "CONTACT_EMAIL_COUNT",
+						"Items": [
+							{
+								"Name": "Contact Size",
+								"Values": [1000, 2500, 5000, 10000],
+								"Code": "CONTACT_COUNT"
+							},
+							{
+								"Name": "Email Size",
+								"Values": [10000, 25000, 50000, 100000],
+								"Code": "EMAIL_SEND_COUNT"
+							},
+							{
+								"Name": "Amount",
+								"Values": [0, 30, 42, 54],
+								"Code": "ADDON_AMOUNT"
+							}
+						]
+					}
+				],
+				"Amount": 11,
+				"Currency": "usd",
+				"Active": true,
+				"TrialDays": 30,
+				"Interval": "monthly"
+			},
+			{
+				"PlanName": "Essential",
+				"PlanID": {
+					"dev": "plan_hCgIxxXF",
+					"staging": "plan_zxOitzN3",
+					"prod": "plan_zxOitzN3"
+				},
+				"Addons": [
+					{
+						"Description": "Contact \u0026 email size",
+						"Code": "CONTACT_EMAIL_COUNT",
+						"Items": [
+							{
+								"Name": "Contact Size",
+								"Values": [1000, 2500, 5000, 10000, 25000, 50000],
+								"Code": "CONTACT_COUNT"
+							},
+							{
+								"Name": "Email Size",
+								"Values": [10000, 25000, 50000, 100000, 250000, 500000],
+								"Code": "EMAIL_SEND_COUNT"
+							},
+							{
+								"Name": "Amount",
+								"Values": [0, 114, 120, 180, 300, 420],
+								"Code": "ADDON_AMOUNT"
+							}
+						]
+					}
+				],
+				"Amount": 22,
+				"Currency": "usd",
+				"Active": true,
+				"TrialDays": 30,
+				"Interval": "monthly"
+			},
+			{
+				"PlanName": "Professional",
+				"PlanID": {
+					"dev": "plan_jW5C6TUK",
+					"staging": "plan_EuZOntLY",
+					"prod": "plan_EuZOntLY"
+				},
+				"Addons": [
+					{
+						"Description": "Contact \u0026 email size",
+						"Code": "CONTACT_EMAIL_COUNT",
+						"Items": [
+							{
+								"Name": "Contact Size",
+								"Values": [1000, 2500, 5000, 10000, 25000, 50000, 100000],
+								"Code": "CONTACT_COUNT"
+							},
+							{
+								"Name": "Email Size",
+								"Values": [10000, 25000, 50000, 100000, 250000, 500000, 1000000],
+								"Code": "EMAIL_SEND_COUNT"
+							},
+							{
+								"Name": "Amount",
+								"Values": [0, 114, 120, 180, 300, 420, 660],
+								"Code": "ADDON_AMOUNT"
+							}
+						]
+					}
+				],
+				"Amount": 35,
+				"Currency": "usd",
+				"Active": true,
+				"TrialDays": 30,
+				"Interval": "monthly"
+			}
+		],
+		"YearlyPlans": [
+			{
+				"PlanName": "Startup",
+				"PlanID": {
+					"dev": "plan_FNWvlbNn",
+					"staging": "plan_j0yt958K",
+					"prod": "plan_j0yt958K"
+				},
+				"Addons": [
+					{
+						"Description": "Contact \u0026 email size",
+						"Code": "CONTACT_EMAIL_COUNT",
+						"Items": [
+							{
+								"Name": "Contact Size",
+								"Values": [1000, 2500, 5000, 10000],
+								"Code": "CONTACT_COUNT"
+							},
+							{
+								"Name": "Email Size",
+								"Values": [10000, 25000, 50000, 100000],
+								"Code": "EMAIL_SEND_COUNT"
+							},
+							{
+								"Name": "Amount",
+								"Values": [0, 25, 35, 45],
+								"Code": "ADDON_AMOUNT"
+							}
+						]
+					}
+				],
+				"Amount": 108,
+				"Currency": "usd",
+				"Active": true,
+				"TrialDays": 30,
+				"Interval": "yearly"
+			},
+			{
+				"PlanName": "Essential",
+				"PlanID": {
+					"dev": "plan_tSDcITHh",
+					"staging": "plan_gBx2fBRK",
+					"prod": "plan_gBx2fBRK"
+				},
+				"Addons": [
+					{
+						"Description": "Choose your contact \u0026 email size",
+						"Code": "",
+						"Items": [
+							{
+								"Name": "Contact Size",
+								"Values": [1000, 2500, 5000, 10000, 25000, 50000],
+								"Code": "CONTACT_COUNT"
+							},
+							{
+								"Name": "Email Size",
+								"Values": [10000, 25000, 50000, 100000, 250000, 500000],
+								"Code": "EMAIL_SEND_COUNT"
+							},
+							{
+								"Name": "Amount",
+								"Values": [0, 95, 100, 150, 250, 350],
+								"Code": "ADDON_AMOUNT"
+							}
+						]
+					}
+				],
+				"Amount": 228,
+				"Currency": "usd",
+				"Active": true,
+				"TrialDays": 30,
+				"Interval": "yearly"
+			},
+			{
+				"PlanName": "Professional",
+				"PlanID": {
+					"dev": "plan_Wl19qJrd",
+					"staging": "plan_gvTVfzmU",
+					"prod": "plan_gvTVfzmU"
+				},
+				"Addons": [
+					{
+						"Description": "Contact \u0026 email size",
+						"Code": "CONTACT_EMAIL_COUNT",
+						"Items": [
+							{
+								"Name": "Contact Size",
+								"Values": [1000, 2500, 5000, 10000, 25000, 50000, 100000],
+								"Code": "CONTACT_COUNT"
+							},
+							{
+								"Name": "Email Size",
+								"Values": [10000, 25000, 50000, 100000, 250000, 500000, 1000000],
+								"Code": "EMAIL_SEND_COUNT"
+							},
+							{
+								"Name": "Amount",
+								"Values": [0, 95, 100, 150, 250, 350, 550],
+								"Code": "ADDON_AMOUNT"
+							}
+						]
+					}
+				],
+				"Amount": 348,
+				"Currency": "usd",
+				"Active": true,
+				"TrialDays": 30,
+				"Interval": "yearly"
+			}
+		]
+	},
+	"people": {
+		"MonthlyPlans": [
+			{
+				"PlanName": "Startup",
+				"PlanID": {
+					"dev": "plan_kSjYO1TS",
+					"staging": "plan_CGc29TVe",
+					"prod": "plan_CGc29TVe"
+				},
+				"Addons": [],
+				"Amount": 22,
+				"Currency": "usd",
+				"Active": true,
+				"TrialDays": 30,
+				"Interval": "monthly"
+			},
+			{
+				"PlanName": "Essential",
+				"PlanID": {
+					"dev": "plan_r9hvQN9v",
+					"staging": "plan_JVGO86Z9",
+					"prod": "plan_JVGO86Z9"
+				},
+				"Addons": [],
+				"Amount": 35,
+				"Currency": "usd",
+				"Active": true,
+				"TrialDays": 30,
+				"Interval": "monthly"
+			},
+			{
+				"PlanName": "Professional",
+				"PlanID": {
+					"dev": "plan_PJenda3W",
+					"staging": "plan_cSoznKYe",
+					"prod": "plan_cSoznKYe"
+				},
+				"Addons": [],
+				"Amount": 58,
+				"Currency": "usd",
+				"Active": true,
+				"TrialDays": 30,
+				"Interval": "monthly"
+			}
+		],
+		"YearlyPlans": [
+			{
+				"PlanName": "Startup",
+				"PlanID": {
+					"dev": "plan_1cboA3DR",
+					"staging": "plan_Zcv7pQn4",
+					"prod": "plan_Zcv7pQn4"
+				},
+				"Addons": [],
+				"Amount": 228,
+				"Currency": "usd",
+				"Active": true,
+				"TrialDays": 30,
+				"Interval": "yearly"
+			},
+			{
+				"PlanName": "Essential",
+				"PlanID": {
+					"dev": "plan_vukD948o",
+					"staging": "plan_EWNm7JAm",
+					"prod": "plan_EWNm7JAm"
+				},
+				"Addons": [],
+				"Amount": 348,
+				"Currency": "usd",
+				"Active": true,
+				"TrialDays": 30,
+				"Interval": "yearly"
+			},
+			{
+				"PlanName": "Professional",
+				"PlanID": {
+					"dev": "plan_a8WQi24e",
+					"staging": "plan_xNm0I1Ck",
+					"prod": "plan_xNm0I1Ck"
+				},
+				"Addons": [],
+				"Amount": 588,
+				"Currency": "usd",
+				"Active": true,
+				"TrialDays": 30,
+				"Interval": "yearly"
+			}
+		]
+	}
+}

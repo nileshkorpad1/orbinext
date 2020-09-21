@@ -1,0 +1,146 @@
+{
+	"all": {
+		"planPriceMonthly": {
+			"startup": {
+				"price": "39",
+				"usernumbers": "3",
+				"unit": "$"
+			},
+			"essential": {
+				"price": "99",
+				"usernumbers": "5",
+				"unit": "$"
+			},
+			"professional": {
+				"price": "239",
+				"usernumbers": "10",
+				"unit": "$"
+			}
+		},
+		"planPriceYearly": {
+			"startup": {
+				"price": "139",
+				"usernumbers": "3",
+				"unit": "$"
+			},
+			"essential": {
+				"price": "599",
+				"usernumbers": "5",
+				"unit": "$"
+			},
+			"professional": {
+				"price": "1239",
+				"usernumbers": "10",
+				"unit": "$"
+			}
+		}
+	},
+	"sales": {
+		"planPriceMonthly": {
+			"startup": {
+				"price": "12",
+				"usernumbers": "3",
+				"unit": "$"
+			},
+			"essential": {
+				"price": "32",
+				"usernumbers": "5",
+				"unit": "$"
+			},
+			"professional": {
+				"price": "78",
+				"usernumbers": "10",
+				"unit": "$"
+			}
+		},
+		"planPriceYearly": {
+			"startup": {
+				"price": "61",
+				"usernumbers": "3",
+				"unit": "$"
+			},
+			"essential": {
+				"price": "180",
+				"usernumbers": "5",
+				"unit": "$"
+			},
+			"professional": {
+				"price": "478",
+				"usernumbers": "10",
+				"unit": "$"
+			}
+		}
+	},
+	"books": {
+		"planPriceMonthly": {
+			"startup": {
+				"price": "13",
+				"usernumbers": "3",
+				"unit": "$"
+			},
+			"essential": {
+				"price": "33",
+				"usernumbers": "5",
+				"unit": "$"
+			},
+			"professional": {
+				"price": "79",
+				"usernumbers": "10",
+				"unit": "$"
+			}
+		},
+		"planPriceYearly": {
+			"startup": {
+				"price": "79",
+				"usernumbers": "3",
+				"unit": "$"
+			},
+			"essential": {
+				"price": "199",
+				"usernumbers": "5",
+				"unit": "$"
+			},
+			"professional": {
+				"price": "479",
+				"usernumbers": "10",
+				"unit": "$"
+			}
+		}
+	},
+	"people": {
+		"planPriceMonthly": {
+			"startup": {
+				"price": "11",
+				"usernumbers": "3",
+				"unit": "$"
+			},
+			"essential": {
+				"price": "30",
+				"usernumbers": "5",
+				"unit": "$"
+			},
+			"professional": {
+				"price": "72",
+				"usernumbers": "10",
+				"unit": "$"
+			}
+		},
+		"planPriceYearly": {
+			"startup": {
+				"price": "61",
+				"usernumbers": "3",
+				"unit": "$"
+			},
+			"essential": {
+				"price": "180",
+				"usernumbers": "5",
+				"unit": "$"
+			},
+			"professional": {
+				"price": "472",
+				"usernumbers": "10",
+				"unit": "$"
+			}
+		}
+	}
+}
