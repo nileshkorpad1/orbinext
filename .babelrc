@@ -22,7 +22,7 @@
       }
     ],
     [
-      "inline-svg"
+          "inline-react-svg"
     ],
     [
       "babel-plugin-styled-components",

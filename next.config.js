@@ -19,25 +19,25 @@ const nextConfig = {
             reportFilename: "../bundles/client.html",
         },
     },
-    webpack(config) {
-        config.module.rules.push({
-            test: /\.(woff|woff2|eot|ttf|otf)$/,
-            use: [
-                {
-                    loader: "url-loader",
-                    options: {
-                        esModule: false,
-                    },
-                },
-            ],
-        });
-        config.plugins.push(
-            new Dotenv({
-                silent: true,
-            })
-        );
-        return config;
-    },
+    // webpack(config) {
+        // config.module.rules.push({
+        //     test: /\.(woff|woff2|eot|ttf|otf)$/,
+        //     use: [
+        //         {
+        //             loader: "url-loader",
+        //             options: {
+        //                 esModule: false,
+        //             },
+        //         },
+        //     ],
+        // });
+    //     config.plugins.push(
+    //         new Dotenv({
+    //             silent: true,
+    //         })
+    //     );
+    //     return config;
+    // },
 };
 
 module.exports = withPlugins(
